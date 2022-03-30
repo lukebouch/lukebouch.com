@@ -37,5 +37,5 @@ small,
 }
 
 .content {
-    @apply max-x-7xl mx-auto;
+    @apply max-w-7xl mx-auto;
 }
