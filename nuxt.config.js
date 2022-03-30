@@ -36,7 +36,7 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ['@nuxt/content'],
+    modules: ['@nuxt/content', '@nuxt/http'],
 
     // Content
     content: {
