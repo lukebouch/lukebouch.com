@@ -5,7 +5,6 @@
       <h1 class="leading-10">Hello 👋<br>
       <span class="text-lg font-normal">name is Luke Bouch.</span></h1>
     </div>
-    
   </section>
 </template>
 
