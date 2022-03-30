@@ -7,18 +7,31 @@
         <span class="text-lg font-normal">name is Luke Bouch.</span></h1>
       </div>
     </section>
+    <section>
+      <ul>
+        <li v-for="post in posts" :key="post.id">
+          {{ post.title }}
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
-  async asyncData({ $content }) {
-    const projects = await $content("projects").fetch();
-
+  data() {
     return {
-      projects,
-    };
+      posts: [],
+    }
+  },
+  async fetch() {
+    this.posts = await this.$http.$get('api.sublimeblogs.com/posts');
+
+    console.log(posts)
+    return {
+      posts
+    }
   }
 }
 </script>
