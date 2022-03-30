@@ -16,7 +16,7 @@ collections:
       preview: false
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Start Date', name: 'date', widget: 'datetime' }
-      - { label: 'End Date', name: 'date', widget: 'datetime' }
+      - { label: 'Start Date', name: 'start_date', widget: 'datetime' }
+      - { label: 'End Date', name: 'end_date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
