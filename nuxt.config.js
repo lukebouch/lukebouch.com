@@ -36,7 +36,11 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ['@nuxt/content', '@nuxt/http'],
+    modules: ['@nuxt/content', '@nuxt/http', '@nuxtjs/markdownit'],
+
+    markdownit: {
+        runtime: true, // Support `$md()`
+    },
 
     // Content
     content: {
