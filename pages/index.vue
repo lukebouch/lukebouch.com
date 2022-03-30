@@ -7,7 +7,7 @@
         <span class="text-lg font-normal">name is Luke Bouch.</span></h1>
       </div>
     </section>
-    <section class="container p-5">
+    <section class="container-sm p-5">
       <ul class="space-y-5">
         <li class="p-5 rounded-lg border-2" v-for="post in posts" :key="post.id">
           <span v-html="$md.render(post.content)"></span>

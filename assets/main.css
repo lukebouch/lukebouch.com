@@ -39,3 +39,7 @@ small,
 .container {
     @apply max-w-7xl mx-auto;
 }
+
+.container-sm {
+    @apply max-w-3xl mx-auto;
+}
