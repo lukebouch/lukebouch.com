@@ -43,3 +43,7 @@ small,
 .container-sm {
     @apply max-w-3xl mx-auto;
 }
+
+.post-content > p {
+    @apply mb-4;
+}

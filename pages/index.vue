@@ -10,7 +10,7 @@
     <section class="container-sm p-5">
       <ul class="space-y-5">
         <li class="p-5 rounded-lg border-2" v-for="post in posts" :key="post.id">
-          <div v-html="$md.render(post.content)"></div>
+          <div class="post-content" v-html="$md.render(post.content)"></div>
           <div class="mt-2 text-gray-600">{{ formatDate(post.date) }}</div>
         </li>
       </ul>
