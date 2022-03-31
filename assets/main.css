@@ -47,3 +47,7 @@ small,
 .post-content > p {
     @apply mb-4;
 }
+
+.post-content img {
+    @apply rounded-lg;
+}
