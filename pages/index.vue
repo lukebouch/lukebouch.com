@@ -10,7 +10,8 @@
     <section class="container-sm p-5">
       <ul class="space-y-5">
         <li class="p-5 rounded-lg border-2" v-for="post in posts" :key="post.id">
-          <span v-html="$md.render(post.content)"></span>
+          <div v-html="$md.render(post.content)"></div>
+          <div class="mt-2 text-gray-600">{{ formatDate(post.date) }}</div>
         </li>
       </ul>
     </section>
@@ -20,6 +21,11 @@
 <script>
 export default {
   name: 'IndexPage',
+  methods: {
+    formatDate(date) {
+      return this.$dayjs().format('h:mma, MM/DD/YYYY')
+    }
+  },
   data() {
     return {
       posts: [],
@@ -27,6 +33,6 @@ export default {
   },
   async fetch() {
     this.posts = await this.$http.$get('https://api.sublimeblogs.com/posts', { headers: { 'Authorization': 'Bearer 2|jsQ16wlhekZIXaCmE1NShvr7iDL8z0aOZcZTRora' } });
-  }
+  },
 }
 </script>
