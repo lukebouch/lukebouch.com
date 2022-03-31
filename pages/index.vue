@@ -11,7 +11,7 @@
       <ul class="space-y-5">
         <li class="p-5 rounded-lg border-2" v-for="post in posts" :key="post.id">
           <div class="post-content" v-html="$md.render(post.content)"></div>
-          <div class="mt-2 text-gray-600">{{ formatDate(post.date) }}</div>
+          <div class="mt-2 text-gray-600">{{ formatDate(post.published_at) }}</div>
         </li>
       </ul>
     </section>
@@ -23,7 +23,7 @@ export default {
   name: 'IndexPage',
   methods: {
     formatDate(date) {
-      return this.$dayjs().format('h:mma, MM/DD/YYYY')
+      return this.$dayjs(date).format('h:mma, MM/DD/YYYY')
     }
   },
   data() {
