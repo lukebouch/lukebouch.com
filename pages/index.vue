@@ -32,7 +32,7 @@ export default {
     }
   },
   async fetch() {
-    this.posts = await this.$http.$get('https://api.sublimeblogs.com/posts', { headers: { 'Authorization': 'Bearer 2|jsQ16wlhekZIXaCmE1NShvr7iDL8z0aOZcZTRora' } });
+    this.posts = await this.$http.$get('https://api.sublimeblogs.com/posts', { headers: { 'Authorization': 'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM' } });
   },
 }
 </script>
