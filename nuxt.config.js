@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import axios from 'axios'
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
@@ -55,12 +55,14 @@ export default {
                     link: 'https://lukebouch.com/feed',
                 }
 
-                this.posts = await fetch('https://api.sublimeblogs.com/posts', {
-                    headers: {
-                        Authorization:
-                            'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
-                    },
-                }).then((res) => res.json())
+                let posts = await axios
+                    .get('https://api.sublimeblogs.com/posts', {
+                        headers: {
+                            Authorization:
+                                'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
+                        },
+                    })
+                    .then((res) => res.data)
 
                 posts.forEach((post) => {
                     feed.addItem({
