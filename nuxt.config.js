@@ -70,6 +70,7 @@ export default {
                         title: post.title,
                         id: post.id,
                         content: post.content,
+                        published: new Date(post.published_at),
                     })
                 })
 
