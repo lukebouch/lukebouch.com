@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
@@ -41,6 +43,41 @@ export default {
         '@nuxt/http',
         '@nuxtjs/markdownit',
         '@nuxtjs/dayjs',
+        '@nuxtjs/feed',
+    ],
+
+    feed: [
+        {
+            path: '/feed.xml',
+            async create(feed) {
+                feed.options = {
+                    title: 'Luke Bouch',
+                    link: 'https://lukebouch.com/feed',
+                }
+
+                this.posts = await fetch('https://api.sublimeblogs.com/posts', {
+                    headers: {
+                        Authorization:
+                            'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
+                    },
+                }).then((res) => res.json())
+
+                posts.forEach((post) => {
+                    feed.addItem({
+                        title: post.title,
+                        id: post.id,
+                        content: post.content,
+                    })
+                })
+
+                feed.addContributor({
+                    name: 'Luke Bouch',
+                    link: 'https://lukebouch.com/',
+                })
+            },
+            cacheTime: 1000 * 60 * 15,
+            type: 'rss2',
+        },
     ],
 
     markdownit: {
