@@ -1,14 +1,21 @@
 <template>
     <Main>
-        <h1 v-if="post.title">{{ post.title }}</h1>
-        <div class="mt-2 text-gray-600">
-            {{ formatDate(post.published_at) }}
+        <div class="container-sm">
+            <div class="mb-5">
+                <h1 class="mb-0" v-if="post.title">{{ post.title }}</h1>
+                <div class="text-gray-600">
+                    {{ formatDate(post.published_at) }}
+                </div>
+            </div>
+            <div
+                class="post-content"
+                v-if="post.content"
+                v-html="$md.render(post.content)"
+            ></div>
+            <div class="text-center">
+                <NuxtLink to="/" class="btn-primary">All Posts</NuxtLink>
+            </div>
         </div>
-        <div
-            class="post-content"
-            v-if="post.content"
-            v-html="$md.render(post.content)"
-        ></div>
     </Main>
 </template>
 
