@@ -28,15 +28,15 @@ export default {
         },
     },
     async asyncData({ params, $http }) {
-        const posts = await $http.$get(
+        const response = await $http.$get(
             `https://api.sublimeblogs.com/posts?slug=${params.slug}`,
             {
                 headers: {
                     Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
-        ).data
-        const post = posts[0]
+        )
+        const post = response.data[0]
         return { post }
     },
     components: { Main },
