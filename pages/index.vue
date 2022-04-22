@@ -55,14 +55,15 @@ export default {
         }
     },
     async fetch() {
-        this.posts = await this.$http.$get(
+        const response = await this.$http.$get(
             'https://api.sublimeblogs.com/posts',
             {
                 headers: {
                     Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
-        ).data
+        )
+        this.posts = response.data
     },
     components: { Main },
 }
