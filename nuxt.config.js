@@ -1,3 +1,4 @@
+require('dotenv').config()
 import axios from 'axios'
 
 export default {
@@ -59,8 +60,7 @@ export default {
                 let posts = await axios
                     .get('https://api.sublimeblogs.com/posts', {
                         headers: {
-                            Authorization:
-                                'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
+                            Authorization: `Bearer ${process.env.API_TOKEN}`,
                         },
                     })
                     .then((res) => res.data)
