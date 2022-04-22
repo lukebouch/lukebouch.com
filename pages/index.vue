@@ -1,7 +1,7 @@
 <template>
     <Main>
         <section class="h-screen flex justify-center items-center text-center">
-            <div class="container p-5">
+            <div class="container">
                 <img
                     class="w-32 mx-auto mb-12 shadow-xl rounded-full u-photo"
                     src="@/assets/images/profile.png"
@@ -18,7 +18,7 @@
                 </h1>
             </div>
         </section>
-        <section class="container-sm p-5">
+        <section class="container-sm">
             <ul class="space-y-5">
                 <li
                     class="p-5 rounded-lg border-2"
