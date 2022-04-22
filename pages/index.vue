@@ -25,13 +25,15 @@
                     v-for="post in posts"
                     :key="post.id"
                 >
-                    <div
-                        class="post-content"
-                        v-html="$md.render(post.content)"
-                    ></div>
-                    <div class="mt-2 text-gray-600">
-                        {{ formatDate(post.published_at) }}
-                    </div>
+                    <NuxtLink :to="'/blog/' + post.slug">
+                        <div
+                            class="post-content"
+                            v-html="$md.render(post.content)"
+                        ></div>
+                        <div class="mt-2 text-gray-600">
+                            {{ formatDate(post.published_at) }}
+                        </div>
+                    </NuxtLink>
                 </li>
             </ul>
         </section>
@@ -56,8 +58,7 @@ export default {
             'https://api.sublimeblogs.com/posts',
             {
                 headers: {
-                    Authorization:
-                        'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
+                    Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
         )
