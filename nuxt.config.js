@@ -50,7 +50,7 @@ export default {
 
     feed: [
         {
-            path: '/feed.xml',
+            path: '/feed.rss',
             async create(feed) {
                 feed.options = {
                     title: 'Luke Bouch',
