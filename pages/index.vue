@@ -28,7 +28,7 @@
                     <NuxtLink :to="'/blog/' + post.slug">
                         <div
                             class="post-content"
-                            v-html="$md.render(post.content)"
+                            v-html="post.html_content"
                         ></div>
                         <div class="mt-2 text-gray-600">
                             {{ formatDate(post.published_at) }}
@@ -62,7 +62,7 @@ export default {
                     Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
-        )
+        ).data
     },
     components: { Main },
 }

@@ -57,19 +57,19 @@ export default {
                     link: 'https://lukebouch.com/feed',
                 }
 
-                let posts = await axios
+                const posts = await axios
                     .get('https://api.sublimeblogs.com/posts', {
                         headers: {
                             Authorization: `Bearer ${process.env.API_TOKEN}`,
                         },
                     })
-                    .then((res) => res.data)
+                    .then((res) => res.data.data)
 
                 posts.forEach((post) => {
                     feed.addItem({
                         title: post.title,
                         id: post.id,
-                        content: post.content,
+                        content: post.html_content,
                         published: new Date(post.published_at),
                     })
                 })

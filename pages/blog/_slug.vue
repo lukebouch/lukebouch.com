@@ -9,8 +9,8 @@
             </div>
             <div
                 class="post-content"
-                v-if="post.content"
-                v-html="$md.render(post.content)"
+                v-if="post.html_content"
+                v-html="post.html_content"
             ></div>
             <div class="text-center">
                 <NuxtLink to="/" class="btn-primary">All Posts</NuxtLink>
@@ -35,7 +35,7 @@ export default {
                     Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
-        )
+        ).data
         const post = posts[0]
         return { post }
     },
