@@ -56,8 +56,7 @@ export default {
             'https://api.sublimeblogs.com/posts',
             {
                 headers: {
-                    Authorization:
-                        'Bearer 1|iWYUOWBmmeStNN7XucN5WwGKojR7bAfcztmSgttM',
+                    Authorization: `Bearer ${process.env.API_TOKEN}`,
                 },
             }
         )

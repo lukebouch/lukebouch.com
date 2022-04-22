@@ -44,6 +44,7 @@ export default {
         '@nuxtjs/markdownit',
         '@nuxtjs/dayjs',
         '@nuxtjs/feed',
+        '@nuxtjs/dotenv',
     ],
 
     feed: [
