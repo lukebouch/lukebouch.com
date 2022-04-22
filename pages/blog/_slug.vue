@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Main>
         <h1 v-if="post.title">{{ post.title }}</h1>
         <div class="mt-2 text-gray-600">
             {{ formatDate(post.published_at) }}
@@ -9,10 +9,11 @@
             v-if="post.content"
             v-html="$md.render(post.content)"
         ></div>
-    </div>
+    </Main>
 </template>
 
 <script>
+import Main from '~/components/layouts/main.vue'
 export default {
     methods: {
         formatDate(date) {
@@ -29,8 +30,8 @@ export default {
             }
         )
         const post = posts[0]
-
         return { post }
     },
+    components: { Main },
 }
 </script>

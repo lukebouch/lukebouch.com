@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Main>
         <section class="h-screen flex justify-center items-center text-center">
             <div class="container p-5">
                 <img
@@ -37,10 +37,11 @@
                 </li>
             </ul>
         </section>
-    </div>
+    </Main>
 </template>
 
 <script>
+import Main from '~/components/layouts/main.vue'
 export default {
     name: 'IndexPage',
     methods: {
@@ -63,5 +64,6 @@ export default {
             }
         )
     },
+    components: { Main },
 }
 </script>
