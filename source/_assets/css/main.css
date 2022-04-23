@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 h1,
 h2,
 h3,
@@ -51,7 +55,7 @@ small,
 }
 
 .post-content img {
-    @apply mb-5 rounded-lg;
+    @apply mt-2 mb-5 rounded-lg;
 }
 
 .btn-primary {

@@ -1,10 +1,15 @@
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    purge: ['source/**/*.blade.php', 'source/**/*.md', 'source/**/*.html'],
-    theme: {
-        extend: {
-            fontFamily: {
+  purge: [
+    'source/**/*.blade.php',
+    'source/**/*.md',
+    'source/**/*.html',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
                 sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
@@ -26,10 +31,10 @@ module.exports = {
                     DEFAULT: '#0051E0',
                 },
             },
-        },
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
-}
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
