@@ -7,7 +7,7 @@ pagination: { collection: posts, perPage: 10}
 @section('body')
     <section class="h-screen flex justify-center items-center text-center">
         <div class="container">
-            <img class="w-32 mx-auto mb-12 shadow-xl rounded-full u-photo" src="@/assets/images/profile.png"
+            <img class="w-32 mx-auto mb-12 shadow-xl rounded-full u-photo" src="/assets/images/profile.png"
                 alt="A photo of Luke Bouch." />
             <h1 class="leading-10">
                 Hello 👋<br />
