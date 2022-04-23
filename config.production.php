@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'production' => true,
+    "production" => true,
 ];
