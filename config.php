@@ -19,15 +19,19 @@ return [
                 $response = json_decode(file_get_contents('https://' . getenv('API_URL') . '/posts', false, $context));
                 $posts = $response->data;
 
-                return collect($posts)->map(function ($post) {
-                    return [
-                        'title' => $post->title,
-                        'slug' => $post->slug,
-                        'date' => $post->published_at,
-                        'markdown' => $post->content,
-                        'html' => $post->html_content,
-                    ];
-                });
+                if ($posts) {
+                    return collect($posts)->map(function ($post) {
+                        return [
+                            'title' => $post->title,
+                            'slug' => $post->slug,
+                            'date' => $post->published_at,
+                            'markdown' => $post->content,
+                            'html' => $post->html_content,
+                        ];
+                    });
+                }
+
+                return [];
             }
         ]
     ],
