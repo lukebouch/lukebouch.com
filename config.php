@@ -8,7 +8,7 @@ return [
     'collections' => [
         'posts' => [
             'path' => 'blog/{date|Y-m-d}/{slug}',
-            'sort' => 'date',
+            'sort' => '-date',
             'items' => function ($config) {
                 $context = stream_context_create([
                     'http' => [
