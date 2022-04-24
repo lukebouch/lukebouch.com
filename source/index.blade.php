@@ -1,5 +1,5 @@
 ---
-pagination: { collection: posts, perPage: 10}
+pagination: { collection: posts, perPage: 25}
 ---
 
 @extends('_layouts.main')
