@@ -24,10 +24,14 @@ return [
                         'title' => $post->title,
                         'slug' => $post->slug,
                         'date' => $post->published_at,
+                        'markdown' => $post->content,
                         'html' => $post->html_content,
                     ];
                 });
             }
         ]
     ],
+    'getExcerpt' => function ($string, $length = 255) {
+        return substr($string, 0, $length);
+    },
 ];
