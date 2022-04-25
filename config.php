@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/New_York');
+
 return [
     'production' => false,
     'baseUrl' => '',
@@ -22,7 +24,7 @@ return [
                 if ($posts) {
                     return collect($posts)->map(function ($post) {
                         return [
-                            'title' => $post->title,
+                            'name' => $post->title,
                             'slug' => $post->slug,
                             'date' => $post->published_at,
                             'markdown' => $post->content,
