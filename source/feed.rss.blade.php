@@ -9,7 +9,7 @@ site_path: feed.rss
         <entry>
             <id>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</id>
             <link type="text/html" rel="alternate" href="" />
-            <title>{{ $post->title }}</title>
+            <title>{{ $post->name }}</title>
             <published>{{ $post->date }}</published>
             <updated>{{ $post->updated }}</updated>
             <author>
