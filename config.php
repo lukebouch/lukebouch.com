@@ -25,6 +25,7 @@ return [
                 if ($posts) {
                     return collect($posts)->map(function ($post) {
                         return [
+                            'id' => $post->id,
                             'name' => $post->title,
                             'slug' => $post->slug,
                             'date' => $post->published_at,

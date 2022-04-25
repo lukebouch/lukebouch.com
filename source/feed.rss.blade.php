@@ -5,19 +5,19 @@ site_path: feed.rss
 @extends('_layouts.rss')
 
 @section('entries')
-    @foreach ($posts as $entry)
+    @foreach ($posts as $post)
         <entry>
-            <id></id>
+            <id>{{ $post->id }}</id>
             <link type="text/html" rel="alternate" href="" />
-            <title>{{ $entry->title }}</title>
-            <published>{{ $entry->date }}</published>
+            <title>{{ $post->title }}</title>
+            <published>{{ $post->date }}</published>
             <updated></updated>
             <author>
                 <name>Luke Bouch</name>
             </author>
 
             <content type="html">
-                {{ $entry->html }}
+                {{ $post->html }}
             </content>
         </entry>
     @endforeach
