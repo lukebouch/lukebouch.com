@@ -25,7 +25,8 @@ pagination: { collection: posts, perPage: 25}
                             <h2 class="p-name mb-0">{{ $post->name }}</h2>
                         @endif
                         <div class="e-content post-content">{!! $post->html !!}</div>
-                        <div class="dt-published">{{ date('g:ia \o\n F j, Y', strtotime($post->date)) }}</div>
+                        <div>{{ date('g:ia \o\n F j, Y', strtotime($post->date)) }}</div>
+                        <div class="dt-published">{{ $post->date }}</div>
                     </article>
                 </li>
             @endforeach
