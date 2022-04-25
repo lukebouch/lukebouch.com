@@ -9,6 +9,7 @@ return [
     'description' => 'The personal blog of Luke Bouch.',
     'collections' => [
         'posts' => [
+            'extends' => '_layouts.post',
             'path' => 'blog/{date|Y-m-d}/{slug}',
             'sort' => '-date',
             'items' => function ($config) {
