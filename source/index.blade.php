@@ -26,7 +26,7 @@ pagination: { collection: posts, perPage: 25}
                         @endif
                         <div class="e-content post-content">{!! $post->html !!}</div>
                         <div>{{ date('g:ia \o\n F j, Y', strtotime($post->date)) }}</div>
-                        <div class="dt-published">{{ $post->date }}</div>
+                        <div class="dt-published hidden">{{ $post->date }}</div>
                     </article>
                 </li>
             @endforeach
