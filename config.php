@@ -29,6 +29,7 @@ return [
                             'name' => $post->title,
                             'slug' => $post->slug,
                             'date' => $post->published_at,
+                            'updated' => $post->updated_at,
                             'markdown' => $post->content,
                             'html' => $post->html_content,
                         ];

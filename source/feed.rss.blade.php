@@ -7,11 +7,11 @@ site_path: feed.rss
 @section('entries')
     @foreach ($posts as $post)
         <entry>
-            <id>{{ $post->id }}</id>
+            <id>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</id>
             <link type="text/html" rel="alternate" href="" />
             <title>{{ $post->title }}</title>
             <published>{{ $post->date }}</published>
-            <updated></updated>
+            <updated>{{ $post->updated }}</updated>
             <author>
                 <name>Luke Bouch</name>
             </author>
