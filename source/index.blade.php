@@ -16,7 +16,7 @@ pagination: { collection: posts, perPage: 25}
             </h1>
         </div>
     </section>
-    <section class="container px-5">
+    <section class="container-sm px-5">
         <ol class="space-y-8 divide-y">
             @foreach ($pagination->items as $post)
                 <li class="pt-8">

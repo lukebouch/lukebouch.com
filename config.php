@@ -31,7 +31,7 @@ return [
                     });
                 }
 
-                return [];
+                return [[]];
             }
         ]
     ],
