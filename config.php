@@ -5,6 +5,7 @@ date_default_timezone_set('America/New_York');
 return [
     'production' => false,
     'baseUrl' => '',
+    'siteAuthor' => 'Luke Bouch',
     'title' => 'Luke Bouch',
     'description' => 'The personal blog of Luke Bouch.',
     'collections' => [

@@ -13,7 +13,7 @@ site_path: feed.rss
             <published>{{ $post->date }}</published>
             <updated>{{ $post->updated }}</updated>
             <author>
-                <name>Luke Bouch</name>
+                <name>{{ $page->siteAuthor }}</name>
             </author>
 
             <content type="html">
