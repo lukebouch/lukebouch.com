@@ -21,7 +21,7 @@ pagination: { collection: posts, perPage: 25}
             @foreach ($pagination->items as $post)
                 <li>
                     <article class="h-entry pt-8">
-                        @if ($post->title)
+                        @if ($post->name)
                             <a class="u-url" href="{{ $post->getUrl() }}">
                                 <h2 class="p-name mb-0">{{ $post->name }}</h2>
                             </a>
