@@ -32110,6 +32110,17 @@ small,
   margin-bottom: 1rem;
 }
 
+.post-content a {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
+}
+
+.post-content a:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+}
+
 .post-content img {
   margin-top: 0.5rem;
   margin-bottom: 1.25rem;

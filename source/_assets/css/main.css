@@ -54,6 +54,10 @@ small,
     @apply mb-4;
 }
 
+.post-content a {
+    @apply border-b-2 border-yellow-200 hover:border-yellow-400;
+}
+
 .post-content img {
     @apply mt-2 mb-5 rounded-lg;
 }
