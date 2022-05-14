@@ -13,7 +13,9 @@
 
 <body class="font-sans antialiased text-gray-900">
     <x-navigation :page="$page" />
-    @yield('body')
+    <main class="py-5">
+        @yield('body')
+    </main>
 </body>
 
 </html>

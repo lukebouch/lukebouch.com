@@ -5,16 +5,8 @@ pagination: { collection: posts, perPage: 25}
 @extends('_layouts.main')
 
 @section('body')
-    <section class="flex items-center justify-center h-screen -my-5 text-center">
-        <div class="container">
-            <img class="w-32 mx-auto mb-12 rounded-full shadow-xl u-photo" src="/assets/images/profile.png"
-                alt="A photo of Luke Bouch." />
-            <h1 class="leading-10">
-                Hello 👋<br />
-                <span class="text-lg font-normal">my name is
-                    <a href="https://lukebouch.com" class="h-card p-name">Luke Bouch</a>.</span>
-            </h1>
-        </div>
+    <section class="px-5 py-10 mt-5 text-center container-sm">
+        <h1>Blog</h1>
     </section>
     <section class="px-5 container-sm">
         <ol class="space-y-8 divide-y">
