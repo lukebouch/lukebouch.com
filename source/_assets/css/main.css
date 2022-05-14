@@ -43,7 +43,7 @@ small,
 }
 
 .container {
-    @apply max-w-7xl mx-auto;
+    @apply mx-auto max-w-7xl;
 }
 
 .container-sm {
@@ -63,5 +63,9 @@ small,
 }
 
 .btn-primary {
-    @apply inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+    @apply inline-flex items-center px-4 py-2 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+.link {
+    @apply border-b-2 border-yellow-200 hover:border-yellow-400;
 }
