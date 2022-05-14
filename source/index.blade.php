@@ -28,7 +28,7 @@ pagination: { collection: posts, perPage: 5}
                         @endif
                         <div class="e-content post-content">{!! $page->getExcerpt($post->html, 255) !!}</div>
 
-                        <a class="inline-block mb-2 link">Read more</a>
+                        <a href="{{ $post->getUrl() }}" class="inline-block mb-2 link">Read more</a>
 
                         <a class="u-url" href="{{ $post->getUrl() }}">
                             <div>{{ date('g:ia \o\n F j, Y', strtotime($post->date)) }}</div>
