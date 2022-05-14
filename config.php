@@ -44,4 +44,7 @@ return [
     'getExcerpt' => function ($string, $length = 255) {
         return substr($string, 0, $length);
     },
+    'isActive' => function ($page, $path) {
+        return Illuminate\Support\Str::endsWith(trimPath($page->getPath()), trimPath($path)) || $page->getUrl() == $path;
+    },
 ];
