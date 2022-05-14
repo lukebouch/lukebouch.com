@@ -1,7 +1,3 @@
----
-site_path: feed.rss
----
-
 @extends('_layouts.rss')
 
 @section('entries')
