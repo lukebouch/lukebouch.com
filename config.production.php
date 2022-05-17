@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://lukebouch.netlify.app',
+    'baseUrl' => 'https://lukebouch.com',
     'production' => true,
 ];
