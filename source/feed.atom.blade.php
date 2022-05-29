@@ -1,20 +1,24 @@
-@extends('_layouts.rss')
+<rss version="2.0">
+    <channel>
+        <title>{{ $page->title }}</title>
+        <link>{{ $page->baseUrl }}</link>
+        <description></description>
 
-@section('entries')
-    @foreach ($posts as $post)
-        <entry>
-            <id>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</id>
-            <link type="text/html" rel="alternate" href="" />
-            <title>{{ $post->name }}</title>
-            <published>{{ $post->date }}</published>
-            <updated>{{ $post->updated }}</updated>
-            <author>
-                <name>{{ $page->siteAuthor }}</name>
-            </author>
+        <language>en</language>
 
-            <content type="html">
-                {{ $post->html }}
-            </content>
-        </entry>
-    @endforeach
-@endsection
+        <lastBuildDate></lastBuildDate>
+
+        @foreach ($posts as $post)
+            <item>
+                <title>{{ $post->name }}</title>
+                <link>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</link>
+                <pubDate>{{ $post->date }}</pubDate>
+
+                <guid>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</guid>
+                <description>
+                    {{ $post->html }}
+                </description>
+            </item>
+        @endforeach
+    </channel>
+</rss>
