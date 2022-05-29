@@ -6,13 +6,17 @@
 
         <language>en</language>
 
-        <lastBuildDate></lastBuildDate>
+        <lastBuildDate>{{ date(DateTime::RFC822) }}</lastBuildDate>
 
         @foreach ($posts as $post)
             <item>
+                @php
+                    $date = new DateTime($post->date);
+                @endphp
+
                 <title>{{ $post->name }}</title>
                 <link>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</link>
-                <pubDate>{{ $post->date }}</pubDate>
+                <pubDate>{{ $date->format(DateTime::RFC822) }}</pubDate>
 
                 <guid>{{ rightTrimPath($page->baseUrl) }}/{{ $post->getUrl() }}</guid>
                 <description>
