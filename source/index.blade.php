@@ -5,15 +5,17 @@ pagination: { collection: posts, perPage: 5}
 @extends('_layouts.main')
 
 @section('body')
-    <section class="flex items-center justify-center h-screen -my-5 text-center">
-        <div class="container">
-            <img class="w-32 mx-auto mb-12 rounded-full shadow-xl u-photo" src="/assets/images/profile.png"
-                alt="A photo of Luke Bouch." />
-            <h1 class="leading-10">
-                Hello 👋<br />
-                <span class="text-lg font-normal">my name is
-                    <a href="https://lukebouch.com" class="h-card p-name">Luke Bouch</a>.</span>
-            </h1>
+    <section class="container flex items-center">
+        <div class="flex-1">
+            <h1>Luke Bouch</h1>
+            <p>I'm a junior developer at Wilber Group where I aid in the development and maintance of custom business
+                applications.</p>
         </div>
+        <div class="w-1/3 flex-inital">
+            <img src="/assets/images/lukebouch-cutout.png" alt="Luke Bouch">
+        </div>
+    </section>
+    <section class="p-10 mx-10 rounded-md bg-sky-500">
+
     </section>
 @endsection
