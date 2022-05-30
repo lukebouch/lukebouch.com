@@ -1,5 +1,5 @@
 ---
-pagination: { collection: posts, perPage: 5}
+pagination: { collection: posts, perPage: 3}
 ---
 
 @extends('_layouts.main')
@@ -16,8 +16,20 @@ pagination: { collection: posts, perPage: 5}
         </div>
     </section>
     <section class="max-w-6xl py-5 mx-auto text-white rounded-md bg-sky-500">
-        <div class="container">
-            <h2>Blog</h2>
+        <div class="container space-y-5">
+            <h2>Recent Blog Posts</h2>
+            @if (count($pagination->items))
+                <ol class="grid grid-cols-3 gap-3">
+                    @foreach ($pagination->items as $post)
+                        <li>
+                            @isset($page->title)
+                                <h3>{{ $page->title }}</h3>
+                            @endisset
+                            {{ $page->getExcerpt($page->parseMarkdown($post->markdown)) }}
+                        </li>
+                    @endforeach
+                </ol>
+            @endif
         </div>
     </section>
 @endsection

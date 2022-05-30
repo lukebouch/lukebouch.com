@@ -47,4 +47,8 @@ return [
     'isActive' => function ($page, $path) {
         return Illuminate\Support\Str::endsWith(trimPath($page->getPath()), trimPath($path)) || $page->getUrl() == $path;
     },
+    'parseMarkdown' => function ($page, $markdown) {
+        $parsedown = new Parsedown();
+        return $parsedown->text($markdown);
+    },
 ];

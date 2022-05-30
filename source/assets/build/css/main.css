@@ -606,6 +606,10 @@ small,
   display: inline-flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -642,6 +646,10 @@ small,
   flex: 1 1 0%;
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -662,6 +670,10 @@ small,
   justify-content: space-between;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .space-y-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -678,6 +690,12 @@ small,
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
