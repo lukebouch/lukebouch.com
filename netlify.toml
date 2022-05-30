@@ -3,6 +3,6 @@ command = "npm run prod"
 publish = "build_production"
 
 [[headers]]
-  for = "/feed.rss"
+  for = "/feed.xml"
   [headers.values]
     Content-Type = "application/xml"
