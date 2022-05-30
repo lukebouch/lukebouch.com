@@ -20,10 +20,14 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body>
-    <main>
+<body class="font-sans antialiased text-gray-900">
+    <main class="py-5">
         {{ $slot }}
     </main>
+
+    <footer class="py-10 text-center text-gray-500">
+        <a href="/feed.xml">RSS Feed</a>
+    </footer>
 </body>
 
 </html>
