@@ -6,7 +6,7 @@
                 applications.</p>
         </div>
         <div class="w-1/3 flex-inital">
-            <img src="/assets/images/lukebouch-cutout.png" alt="Luke Bouch">
+            <img src="/images/lukebouch-cutout.png" alt="Luke Bouch">
         </div>
     </section>
 </x-web-layout>
