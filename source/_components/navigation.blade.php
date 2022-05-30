@@ -1,6 +1,6 @@
-<header class="bg-yellow-500">
+<header>
     <nav class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
-        <div class="hidden items-center justify-center w-full py-6 lg:flex">
+        <div class="items-center justify-center hidden w-full py-6 lg:flex">
             <div class="flex items-center">
                 <div class="ml-10 space-x-8">
                     <x-desktop-link href="/" :page="$page">Home</x-desktop-link>
