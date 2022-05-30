@@ -18,4 +18,8 @@
     </main>
 </body>
 
+<footer class="py-10 text-center text-gray-500">
+    <a href="/feed.rss">RSS Feed</a>
+</footer>
+
 </html>
