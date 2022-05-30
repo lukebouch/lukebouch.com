@@ -15,7 +15,9 @@ pagination: { collection: posts, perPage: 5}
             <img src="/assets/images/lukebouch-cutout.png" alt="Luke Bouch">
         </div>
     </section>
-    <section class="p-10 mx-10 rounded-md bg-sky-500">
-
+    <section class="max-w-6xl py-5 mx-auto text-white rounded-md bg-sky-500">
+        <div class="container">
+            <h2>Blog</h2>
+        </div>
     </section>
 @endsection
