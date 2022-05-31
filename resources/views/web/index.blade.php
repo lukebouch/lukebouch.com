@@ -6,10 +6,10 @@
                 applications.</p>
         </div>
         <div class="w-1/3 flex-inital">
-            <img src="/images/lukebouch-cutout.png" alt="Luke Bouch">
+            <img class=" drop-shadow-md" src="/images/lukebouch-cutout.png" alt="Luke Bouch">
         </div>
     </section>
-    <section class="max-w-6xl py-10 mx-auto text-white rounded-md bg-sky-500">
+    <section class="max-w-6xl py-10 mx-auto text-white rounded-md shadow-xl bg-sky-500">
         <div class="container space-y-5">
             <h2>Recent Blog Posts</h2>
             @unless($posts->isEmpty())
