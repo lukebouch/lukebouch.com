@@ -30,5 +30,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'sublime-blogs' => [
+        'key' => env('SUBLIME_BLOGS_KEY'),
+        'endpoint' => env('SUBLIME_BLOGS_ENDPOINT', 'https://api.sublimeblogs.com'),
+    ],
 
 ];
