@@ -21,6 +21,7 @@
 </head>
 
 <body class="font-sans antialiased text-gray-900">
+    <x-web.navigation />
     <main class="py-5">
         {{ $slot }}
     </main>
