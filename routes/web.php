@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostsController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebController::class, 'index']);
+Route::prefix('/posts')->group(function () {
+    Route::get('/', [PostsController::class, 'index']);
+});
 
 require __DIR__ . '/auth.php';
