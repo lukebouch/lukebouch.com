@@ -9,4 +9,9 @@
             <img src="/images/lukebouch-cutout.png" alt="Luke Bouch">
         </div>
     </section>
+    <section class="max-w-6xl py-5 mx-auto text-white rounded-md bg-sky-500">
+        <div class="container space-y-5">
+            <h2>Recent Blog Posts</h2>
+        </div>
+    </section>
 </x-web-layout>
