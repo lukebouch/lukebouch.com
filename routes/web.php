@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeedController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
@@ -19,5 +20,7 @@ Route::get('/', [WebController::class, 'index']);
 Route::prefix('/posts')->group(function () {
     Route::get('/', [PostsController::class, 'index']);
 });
+
+Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 
 require __DIR__ . '/auth.php';

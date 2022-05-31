@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link href="TODO" rel="alternate" type="application/rss+xml" title="{{ config('web.title') }}">
+    <link href="{{ route('feeds.rss') }}" rel="alternate" type="application/rss+xml"
+        title="{{ config('web.title') }}">
 
     <title>{{ config('web.title') }}</title>
 
