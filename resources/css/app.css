@@ -51,12 +51,16 @@
         @apply max-w-3xl mx-auto;
     }
 
+    .post-content {
+        @apply prose;
+    }
+
     .post-content > p {
         @apply mb-4;
     }
 
     .post-content a {
-        @apply border-b-2 border-yellow-200 hover:border-yellow-400;
+        @apply no-underline border-b-2 border-yellow-200 hover:border-yellow-400;
     }
 
     .post-content img {

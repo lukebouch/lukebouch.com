@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\PaginationHelper;
 use App\Services\SublimeBlogs;
 use Illuminate\Http\Request;
 
@@ -9,8 +10,10 @@ class PostsController extends Controller
 {
     public function index()
     {
+        $posts = PaginationHelper::paginate(SublimeBlogs::getPosts(), 10);
+
         return view('web.posts.index', [
-            'posts' => SublimeBlogs::getPosts(),
+            'posts' => $posts,
         ]);
     }
 
