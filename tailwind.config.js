@@ -1,40 +1,23 @@
-
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: [
-    'source/**/*.blade.php',
-    'source/**/*.md',
-    'source/**/*.html',
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
-      },
-      fontSize: {
-        xs: '.75rem',
-        sm: '.875rem',
-        tiny: '.875rem',
-        base: '1rem',
-        lg: '1.333rem',
-        xl: '1.777rem',
-        '2xl': '2.369rem',
-        '3xl': '3.157rem',
-        '4xl': '4.209rem',
-        '5xl': '5.332rem',
-        '6xl': '6.665rem',
-        '7xl': '7.998rem',
-      },
-      colors: {
-        blue: {
-          DEFAULT: '#0051E0',
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+    ],
+
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            },
         },
-      },
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/line-clamp'),
+    ],
 };

@@ -1,8 +1,0 @@
-[build]
-command = "npm run prod"
-publish = "build_production"
-
-[[headers]]
-  for = "/feed.xml"
-  [headers.values]
-    Content-Type = "application/xml"
