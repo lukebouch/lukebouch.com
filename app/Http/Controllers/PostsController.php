@@ -13,4 +13,13 @@ class PostsController extends Controller
             'posts' => SublimeBlogs::getPosts(),
         ]);
     }
+
+    public function show($slug)
+    {
+        $post = SublimeBlogs::getPosts()->where('slug', $slug)->first();
+
+        return view('web.posts.show', [
+            'post' => $post,
+        ]);
+    }
 }

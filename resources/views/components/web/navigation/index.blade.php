@@ -4,13 +4,13 @@
             <div class="flex items-center">
                 <div class="space-x-8">
                     <x-web.navigation.desktop-link href="/">Home</x-web.navigation.desktop-link>
-                    <x-web.navigation.desktop-link href="/blog">Blog</x-web.navigation.desktop-link>
+                    <x-web.navigation.desktop-link route="posts.index">Blog</x-web.navigation.desktop-link>
                 </div>
             </div>
         </div>
         <div class="flex flex-wrap justify-center py-4 space-x-6 lg:hidden">
             <x-web.navigation.mobile-link href="/">Home</x-web.navigation.mobile-link>
-            <x-web.navigation.mobile-link href="/blog">Blog</x-web.navigation.mobile-link>
+            <x-web.navigation.mobile-link route="posts.index">Blog</x-web.navigation.mobile-link>
         </div>
     </nav>
 </header>

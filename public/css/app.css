@@ -1217,6 +1217,10 @@ small,
   padding: 0.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1841,6 +1845,11 @@ small,
 }
 
 @media (min-width: 768px){
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .md\:-mt-px{
     margin-top: -1px;

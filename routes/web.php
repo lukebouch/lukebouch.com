@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebController::class, 'index']);
-Route::prefix('/posts')->group(function () {
-    Route::get('/', [PostsController::class, 'index']);
+Route::prefix('/posts')->name('posts')->group(function () {
+    Route::get('/', [PostsController::class, 'index'])->name('.index');
+    Route::get('/{slug}', [PostsController::class, 'show']);
 });
 
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');

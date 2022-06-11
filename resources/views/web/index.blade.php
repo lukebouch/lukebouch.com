@@ -20,7 +20,7 @@
                                 <h3>{{ $page['title'] }}</h3>
                             @endisset
                             <div class="line-clamp-5">
-                                {{ $post['content'] }}
+                                {!! strip_tags(Illuminate\Mail\Markdown::parse($post['content'] ?? '')->toHtml()) !!}
                             </div>
                             <a class="inline-block font-semibold border-b-2 border-white" href="">Read</a>
                         </li>
