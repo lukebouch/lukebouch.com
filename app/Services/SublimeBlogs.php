@@ -8,6 +8,8 @@ class SublimeBlogs
 {
     public static function getPosts()
     {
-        return Http::withToken(config('services.sublime-blogs.key'))->get(config('services.sublime-blogs.endpoint') . '/posts')->collect('data');
+        return cache()->remember('posts', 60, function () {
+            return Http::withToken(config('services.sublime-blogs.key'))->get(config('services.sublime-blogs.endpoint') . '/posts')->collect('data');
+        });
     }
 }
