@@ -15,6 +15,6 @@ if ($route) {
 @endphp
 
 <a href="{{ $href }}"
-    {{ $attributes->class(['text-base font-medium hover:text-indigo-50', 'font-semibold' => $isActive]) }}>
+    {{ $attributes->class(['text-base font-medium hover:text-gray-700', 'font-semibold' => $isActive]) }}>
     {{ $slot }}
 </a>
