@@ -11,8 +11,11 @@
                             <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
                                 <h2 class="mb-0 p-name">{{ $post['title'] }}</h2>
                             </a>
+
+                            <div class="e-content post-content">{!! $post['html_content'] !!}</div>
+                        @else
+                            <div class="e-content post-content p-name">{!! $post['html_content'] !!}</div>
                         @endif
-                        <div class="e-content post-content">{!! $post['html_content'] !!}</div>
 
                         <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
                             <div>{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</div>
