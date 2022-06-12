@@ -25,6 +25,6 @@ Route::prefix('/posts')->name('posts')->group(function () {
 
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 
-Route::post('/webhook/clear-cache', [WebhookController::class, 'clearCache'])->name('webhooks.clear-cache');
+Route::post('/webhooks/clear-cache', [WebhookController::class, 'clearCache'])->name('webhooks.clear-cache');
 
 require __DIR__ . '/auth.php';
