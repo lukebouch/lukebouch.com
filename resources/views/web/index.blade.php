@@ -1,7 +1,7 @@
 <x-web-layout>
     <section class="container flex items-center px-6">
         <div class="flex-1">
-            <h1>Luke Bouch</h1>
+            <h1 class="h-card" rel="me" href="https://lukebouch.com/">Luke Bouch</h1>
             <p>I'm a junior developer at Wilber Group where I aid in the development and maintance of custom business
                 applications.</p>
         </div>
