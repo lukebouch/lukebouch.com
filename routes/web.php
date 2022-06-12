@@ -3,6 +3,7 @@
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,5 +24,7 @@ Route::prefix('/posts')->name('posts')->group(function () {
 });
 
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
+
+Route::post('/webhook/clear-cache', [WebhookController::class, 'clearCache'])->name('webhooks.clear-cache');
 
 require __DIR__ . '/auth.php';
