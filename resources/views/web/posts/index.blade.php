@@ -8,13 +8,13 @@
                 <li>
                     <article class="pt-8 h-entry">
                         @if ($post['title'])
-                            <a class="u-url" href="TODO">
+                            <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
                                 <h2 class="mb-0 p-name">{{ $post['title'] }}</h2>
                             </a>
                         @endif
                         <div class="e-content post-content">{!! $post['html_content'] !!}</div>
 
-                        <a class="u-url" href="TODO">
+                        <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
                             <div>{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</div>
                         </a>
 
