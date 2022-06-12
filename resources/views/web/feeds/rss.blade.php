@@ -20,7 +20,7 @@
 
                 <guid>{{ route('posts.show', $post['slug']) }}</guid>
                 <description>
-                    {!! $post['html_content'] !!}
+                    {!! strip_tags($post['html_content']) !!}
                 </description>
             </item>
         @endforeach
