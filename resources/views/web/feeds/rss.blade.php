@@ -15,10 +15,10 @@
                 @endphp
 
                 <title>{{ $post['title'] }}</title>
-                <link>TODO</link>
+                <link>{{ route('posts.show', $post['slug']) }}</link>
                 <pubDate>{{ $published_at->format(DateTime::RFC822) }}</pubDate>
 
-                <guid>TODO</guid>
+                <guid>{{ route('posts.show', $post['slug']) }}</guid>
                 <description>
                     {!! $post['html_content'] !!}
                 </description>
