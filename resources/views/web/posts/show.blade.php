@@ -1,7 +1,7 @@
 <x-web-layout>
     <div class="p-5 container-sm md:mx-auto">
         <div class="h-entry">
-            <h1 class="mb-0 p-name">{{ $post['title'] }}</h1>
+            <h1 class="mb-1 p-name">{{ $post['title'] }}</h1>
             <a class="hidden u-url" href="{{ route('posts.show', $post['slug']) }}"></a>
 
             <div>{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</div>

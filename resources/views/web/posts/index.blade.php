@@ -9,7 +9,7 @@
                     <article class="pt-8 h-entry">
                         @if ($post['title'])
                             <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
-                                <h2 class="mb-0 p-name">{{ $post['title'] }}</h2>
+                                <h2 class="p-name">{{ $post['title'] }}</h2>
                             </a>
 
                             <div class="e-content post-content">{!! $post['html_content'] !!}</div>

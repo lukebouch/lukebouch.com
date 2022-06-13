@@ -4,7 +4,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer components {
+@layer base {
     h1,
     h2,
     h3,
@@ -42,7 +42,9 @@
     .text_small {
         font-size: 0.75rem;
     }
+}
 
+@layer components {
     .container {
         @apply max-w-5xl mx-auto;
     }
