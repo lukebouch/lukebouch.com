@@ -23,7 +23,8 @@
                                 <div class="line-clamp-5">
                                     {!! strip_tags(Illuminate\Mail\Markdown::parse($post['content'] ?? '')->toHtml()) !!}
                                 </div>
-                                <a class="inline-block font-semibold border-b-2 border-white" href="">Read</a>
+                                <a class="inline-block font-semibold border-b-2 border-white"
+                                    href="{{ route('posts.show', [$post['slug']]) }}">Read</a>
                             </li>
                         @endforeach
                     </ol>
