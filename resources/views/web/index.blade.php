@@ -20,6 +20,10 @@
                                 @isset($page->title)
                                     <h3>{{ $page['title'] }}</h3>
                                 @endisset
+                                <div>
+                                    <a class="font-medium"
+                                        href="{{ route('posts.show', [$post['slug']]) }}">{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</a>
+                                </div>
                                 <div class="line-clamp-5">
                                     {!! strip_tags(Illuminate\Mail\Markdown::parse($post['content'] ?? '')->toHtml()) !!}
                                 </div>
