@@ -4,7 +4,9 @@
             <h1 class="mb-1 p-name">{{ $post['title'] }}</h1>
             <a class="hidden u-url" href="{{ route('posts.show', $post['slug']) }}"></a>
 
-            <div>{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</div>
+            <div>
+                {{ \Carbon\Carbon::parse($post['published_at'])->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
+            </div>
             <div class="hidden dt-published">{{ $post['published_at'] }}</div>
             <a rel="author" class="hidden p-author h-card" href="https://lukebouch.com">Luke Bouch</a>
 

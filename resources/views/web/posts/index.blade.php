@@ -18,7 +18,9 @@
                         @endif
 
                         <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
-                            <div>{{ date('g:ia \o\n F j, Y', strtotime($post['published_at'])) }}</div>
+                            <div>
+                                {{ \Carbon\Carbon::parse($post['published_at'])->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
+                            </div>
                         </a>
 
                         <div class="hidden dt-published">{{ $post['published_at'] }}</div>
