@@ -9,6 +9,8 @@ use Tests\TestCase;
 
 class WallpaperControllerTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function can_see_published_wallpaper()
     {
