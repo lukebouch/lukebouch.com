@@ -14,4 +14,19 @@ class Wallpaper extends Model implements HasMedia
     protected $casts = [
         'published_at' => 'datetime',
     ];
+
+    public function scopePublished($query)
+    {
+        return $query->where('published_at', '<=', now());
+    }
+
+    public function isPublished()
+    {
+        return $this->published_at != null && $this->published_at <= now() ? true : false;
+    }
+
+    public function isNotPublished()
+    {
+        return !$this->isPublished();
+    }
 }
