@@ -9,11 +9,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "ebess/advanced-nova-media-library": "^4.0",
         "guzzlehttp/guzzle": "^7.4",
         "laravel/framework": "^9.11",
         "laravel/nova": "^4.9",
         "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "spatie/laravel-medialibrary": "^10.0.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
