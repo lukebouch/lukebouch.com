@@ -18,17 +18,17 @@
                         @foreach ($posts as $post)
                             <li class="space-y-2">
                                 @isset($page->title)
-                                    <h3>{{ $page['title'] }}</h3>
+                                    <h3>{{ $page->title }}</h3>
                                 @endisset
                                 <div>
                                     <a class="font-medium"
-                                        href="{{ route('posts.show', [$post['slug']]) }}">{{ \Carbon\Carbon::parse($post['published_at'])->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}</a>
+                                        href="{{ route('posts.show', [$post->slug]) }}">{{ $post->published_at->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}</a>
                                 </div>
                                 <div class="line-clamp-5">
-                                    {!! strip_tags(Illuminate\Mail\Markdown::parse($post['content'] ?? '')->toHtml()) !!}
+                                    {{ $post->text }}
                                 </div>
                                 <a class="inline-block font-semibold border-b-2 border-white"
-                                    href="{{ route('posts.show', [$post['slug']]) }}">Read</a>
+                                    href="{{ route('posts.show', [$post->slug]) }}">Read</a>
                             </li>
                         @endforeach
                     </ol>

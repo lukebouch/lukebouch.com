@@ -10,17 +10,13 @@
 
         @foreach ($posts as $post)
             <item>
-                @php
-                    $published_at = new DateTime($post['published_at']);
-                @endphp
+                <title>{{ $post->title }}</title>
+                <link>{{ route('posts.show', $post->slug) }}</link>
+                <pubDate>{{ $post->published_at->format(DateTime::RFC822) }}</pubDate>
 
-                <title>{{ $post['title'] }}</title>
-                <link>{{ route('posts.show', $post['slug']) }}</link>
-                <pubDate>{{ $published_at->format(DateTime::RFC822) }}</pubDate>
-
-                <guid>{{ route('posts.show', $post['slug']) }}</guid>
+                <guid>{{ route('posts.show', $post->slug) }}</guid>
                 <description>
-                    {!! $post['html_content'] !!}
+                    {!! $post->html !!}
                 </description>
             </item>
         @endforeach

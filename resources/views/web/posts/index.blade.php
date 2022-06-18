@@ -7,23 +7,23 @@
             @foreach ($posts as $post)
                 <li>
                     <article class="pt-8 h-entry">
-                        @if ($post['title'])
-                            <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
-                                <h2 class="p-name">{{ $post['title'] }}</h2>
+                        @if ($post->title)
+                            <a class="u-url" href="{{ route('posts.show', $post->slug) }}">
+                                <h2 class="p-name">{{ $post->title }}</h2>
                             </a>
 
-                            <div class="e-content post-content">{!! $post['html_content'] !!}</div>
+                            <div class="e-content post-content">{!! $post->html !!}</div>
                         @else
-                            <div class="e-content post-content p-name">{!! $post['html_content'] !!}</div>
+                            <div class="e-content post-content p-name">{!! $post->html !!}</div>
                         @endif
 
-                        <a class="u-url" href="{{ route('posts.show', $post['slug']) }}">
+                        <a class="u-url" href="{{ route('posts.show', $post->slug) }}">
                             <div>
-                                {{ \Carbon\Carbon::parse($post['published_at'])->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
+                                {{ $post->published_at->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
                             </div>
                         </a>
 
-                        <div class="hidden dt-published">{{ $post['published_at'] }}</div>
+                        <div class="hidden dt-published">{{ $post->published_at }}</div>
                         <a rel="author" class="hidden p-author h-card" href="https://lukebouch.com">Luke Bouch</a>
                     </article>
                 </li>
