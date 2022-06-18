@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Post;
-use App\Services\SublimeBlogs;
+use App\Services\Facades\SublimeBlogs;
 use Illuminate\Console\Command;
 
 class SyncBlogPosts extends Command
