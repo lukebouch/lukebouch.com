@@ -17,8 +17,17 @@ class WallpaperFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->words(2),
+            'name' => $this->faker->words(2, true),
             'description' => $this->faker->text(),
         ];
+    }
+
+    public function published()
+    {
+        return $this->state(function (array $attributes) {
+            return [
+                'published_at' => now()->subHours(rand(0, 10))->subMinutes(rand(0, 59)),
+            ];
+        });
     }
 }

@@ -12,9 +12,11 @@
         <ul class="grid gap-10 mb-8 md:grid-cols-3">
             @foreach ($wallpapers as $wallpaper)
                 <li class="grid gap-5">
-                    <img class="shadow-lg rounded-xl" src="{{ $wallpaper->media('wallpapers')->first()->getUrl() }}"
+                    <img class="shadow-lg rounded-xl" src="{{ $wallpaper->media('wallpapers')->first()?->getUrl() }}"
                         alt="">
-                    <a class="mx-auto mt-auto btn" href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
+                    <h3 class="hidden">{{ $wallpaper->name }}</h3>
+                    <a class="mx-auto mt-auto btn"
+                        href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
                 </li>
             @endforeach
         </ul>
