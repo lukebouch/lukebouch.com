@@ -49,7 +49,7 @@ class Wallpaper extends Resource
             Text::make('Name')->sortable()->rules('required'),
             DateTime::make('Published At'),
             Textarea::make('Description'),
-            Images::make('Wallpaper', 'wallpaper')->rules('required')->showStatistics(),
+            Images::make('Wallpaper', 'wallpapers')->rules('required')->showStatistics(),
         ];
     }
 
