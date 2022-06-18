@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\FeedController;
-use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\WallpaperController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\WebhookController;
@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WebController::class, 'index']);
 Route::prefix('/posts')->name('posts')->group(function () {
-    Route::get('/', [PostsController::class, 'index'])->name('.index');
-    Route::get('/{slug}', [PostsController::class, 'show'])->name('.show');
+    Route::get('/', [PostController::class, 'index'])->name('.index');
+    Route::get('/{slug}', [PostController::class, 'show'])->name('.show');
 });
 Route::prefix('/wallpapers')->name('wallpapers')->group(function () {
     Route::get('/', [WallpaperController::class, 'index'])->name('.index');
