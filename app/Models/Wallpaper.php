@@ -10,4 +10,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 class Wallpaper extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
+
+    protected $casts = [
+        'published_at' => 'datetime',
+    ];
 }

@@ -2,7 +2,10 @@
 
 namespace App\Nova;
 
+use Carbon\CarbonInterval;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
@@ -44,7 +47,9 @@ class Wallpaper extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Name')->sortable()->rules('required'),
+            DateTime::make('Published At'),
             Textarea::make('Description'),
+            Images::make('Wallpaper', 'wallpaper')->rules('required')->showStatistics(),
         ];
     }
 

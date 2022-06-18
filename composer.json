@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "ebess/advanced-nova-media-library": "^4.0",
         "guzzlehttp/guzzle": "^7.4",
         "laravel/framework": "^9.11",
         "laravel/nova": "^4.9",
