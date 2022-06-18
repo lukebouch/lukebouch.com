@@ -1,17 +1,17 @@
 <x-web-layout>
     <div class="p-5 container-sm md:mx-auto">
         <div class="h-entry">
-            <h1 class="mb-1 p-name">{{ $post['title'] }}</h1>
-            <a class="hidden u-url" href="{{ route('posts.show', $post['slug']) }}"></a>
+            <h1 class="mb-1 p-name">{{ $post->title }}</h1>
+            <a class="hidden u-url" href="{{ route('posts.show', $post->slug) }}"></a>
 
             <div>
-                {{ \Carbon\Carbon::parse($post['published_at'])->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
+                {{ $post->published_at->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}
             </div>
-            <div class="hidden dt-published">{{ $post['published_at'] }}</div>
+            <div class="hidden dt-published">{{ $post->published_at }}</div>
             <a rel="author" class="hidden p-author h-card" href="https://lukebouch.com">Luke Bouch</a>
 
             <div class="mt-5 e-content post-content">
-                {!! $post['html_content'] !!}
+                {!! $post->html !!}
             </div>
         </div>
         <div class="mt-8">

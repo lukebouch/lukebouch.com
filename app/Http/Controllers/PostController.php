@@ -2,25 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Helpers\PaginationHelper;
-use App\Services\SublimeBlogs;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class PostsController extends Controller
+class PostController extends Controller
 {
     public function index()
     {
-        $posts = PaginationHelper::paginate(SublimeBlogs::getPosts(), 10);
+        $posts = Post::paginate(12);
 
         return view('web.posts.index', [
             'posts' => $posts,
         ]);
     }
 
-    public function show($slug)
+    public function show(Post $post)
     {
-        $post = SublimeBlogs::getPosts()->where('slug', $slug)->first();
-
         return view('web.posts.show', [
             'post' => $post,
         ]);

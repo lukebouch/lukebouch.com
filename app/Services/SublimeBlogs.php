@@ -6,10 +6,19 @@ use Illuminate\Support\Facades\Http;
 
 class SublimeBlogs
 {
-    public static function getPosts()
+    protected String $endpoint;
+    protected String $key;
+
+    public function __construct(String $endpoint, String $key)
+    {
+        $this->endpoint = $endpoint;
+        $this->key = $key;
+    }
+
+    public function getPosts()
     {
         return cache()->remember('posts', 60, function () {
-            return Http::withToken(config('services.sublime-blogs.key'))->get(config('services.sublime-blogs.endpoint') . '/posts')->collect('data');
+            return Http::withToken($this->key)->get($this->endpoint . '/posts')->collect('data');
         });
     }
 }
