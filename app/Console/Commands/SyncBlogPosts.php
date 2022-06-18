@@ -40,5 +40,7 @@ class SyncBlogPosts extends Command
                 'published_at' => $post['published_at'],
             ]);
         });
+
+        Post::query()->whereNotIn('sublime_blogs_id', $posts->pluck('id'))->delete();
     }
 }
