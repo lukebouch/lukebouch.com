@@ -17,7 +17,8 @@ class WallpaperFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->words(2),
+            'description' => $this->faker->text(),
         ];
     }
 }
