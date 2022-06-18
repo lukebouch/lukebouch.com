@@ -30,6 +30,6 @@ Route::prefix('/wallpapers')->name('wallpapers')->group(function () {
 
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 
-Route::post('/webhooks/clear-cache', [WebhookController::class, 'clearCache'])->name('webhooks.clear-cache');
+Route::post('/webhooks/sync-blog-posts', [WebhookController::class, 'sync-blog-posts'])->name('webhooks.sync-blog-posts');
 
 require __DIR__ . '/auth.php';
