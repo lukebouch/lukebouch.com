@@ -16,7 +16,8 @@
                 <li class="grid gap-5">
                     <img class="shadow-lg rounded-xl" src="{{ $wallpaper->media('wallpapers')->first()->getUrl() }}"
                         alt="">
-                    <a class="mx-auto btn" href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
+                    <a class="mx-auto mt-auto btn"
+                        href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
                 </li>
             @endforeach
         </ul>
