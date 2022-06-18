@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link href="{{ route('feeds.rss') }}" rel="alternate" type="application/rss+xml"
-        title="{{ config('web.title') }}">
+    <link href="{{ route('feeds.rss') }}" rel="alternate" type="application/rss+xml" title="{{ config('web.title') }}">
 
     <title>{{ config('web.title') }}</title>
 
@@ -15,10 +14,10 @@
 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
 <body class="font-sans antialiased text-gray-900">
