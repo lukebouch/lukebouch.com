@@ -4,9 +4,7 @@
             <div class="mt-3 text-xl">for
                 <x-icons.phone /> Phone +
                 <x-icons.tablet /> Table +
-                <a href="/admin">
-                    <x-icons.computer />
-                </a> Computer
+                <x-icons.computer /> Computer
             </div>
         </h1>
     </section>
@@ -16,8 +14,7 @@
                 <li class="grid gap-5">
                     <img class="shadow-lg rounded-xl" src="{{ $wallpaper->media('wallpapers')->first()->getUrl() }}"
                         alt="">
-                    <a class="mx-auto mt-auto btn"
-                        href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
+                    <a class="mx-auto mt-auto btn" href="{{ route('wallpapers.download', [$wallpaper]) }}">Download</a>
                 </li>
             @endforeach
         </ul>
