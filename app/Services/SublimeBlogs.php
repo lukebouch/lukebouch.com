@@ -17,8 +17,6 @@ class SublimeBlogs
 
     public function getPosts()
     {
-        return cache()->remember('posts', 60, function () {
-            return Http::withToken($this->key)->get($this->endpoint . '/posts')->collect('data');
-        });
+        return Http::withToken($this->key)->get($this->endpoint . '/posts')->collect('data');
     }
 }
