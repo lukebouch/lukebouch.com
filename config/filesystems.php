@@ -68,6 +68,7 @@ return [
 
         Disk::S3 => [
             'driver' => 's3',
+            'visibility' => 'public',
             'key' => env('S3_ACCESS_KEY_ID'),
             'secret' => env('S3_SECRET_ACCESS_KEY'),
             'region' => env('S3_DEFAULT_REGION'),
