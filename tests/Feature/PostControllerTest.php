@@ -33,4 +33,12 @@ class PostControllerTest extends TestCase
         $response->assertSee($post->title)
             ->assertSee($post->excerpt);
     }
+
+    /** @test */
+    public function can_display_404_if_post_does_not_exists()
+    {
+        $response = $this->get(route('posts.show', ['slug']));
+
+        $response->assertNotFound();
+    }
 }

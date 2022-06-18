@@ -16,10 +16,8 @@ class PostController extends Controller
         ]);
     }
 
-    public function show($slug)
+    public function show(Post $post)
     {
-        $post = Post::where('slug', $slug)->first();
-
         return view('web.posts.show', [
             'post' => $post,
         ]);
