@@ -32,7 +32,7 @@ class SyncBlogPosts extends Command
         $posts = SublimeBlogs::getPosts();
 
         $posts->sortBy('id')->each(function ($post) {
-            Post::updateOrInsert([
+            Post::updateOrCreate([
                 'sublime_blogs_id' => $post['id'],
             ], [
                 'title' => $post['title'],
