@@ -10,6 +10,7 @@
 
     <link rel="me" href="https://github.com/lukebouch">
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 
     <title>{{ config('web.title') }}</title>
 
