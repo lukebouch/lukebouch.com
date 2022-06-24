@@ -9,6 +9,7 @@
     <link href="{{ route('feeds.rss') }}" rel="alternate" type="application/rss+xml" title="{{ config('web.title') }}">
 
     <link rel="me" href="https://github.com/lukebouch">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
     <title>{{ config('web.title') }}</title>
 
