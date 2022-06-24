@@ -8,6 +8,8 @@
 
     <link href="{{ route('feeds.rss') }}" rel="alternate" type="application/rss+xml" title="{{ config('web.title') }}">
 
+    <link rel="me" href="https://github.com/lukebouch">
+
     <title>{{ config('web.title') }}</title>
 
     <!-- Fonts -->
