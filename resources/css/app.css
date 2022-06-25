@@ -17,7 +17,7 @@
 
     h1 {
         margin-top: 0;
-        @apply text-3xl md:text-4xl;
+        @apply text-4xl md:text-5xl;
     }
 
     h2 {
@@ -54,7 +54,7 @@
     }
 
     .post-content {
-        @apply prose;
+        @apply prose dark:prose-invert;
     }
 
     .post-content > p {
@@ -62,7 +62,7 @@
     }
 
     .post-content a {
-        @apply no-underline border-b-2 border-yellow-200 hover:border-yellow-400;
+        @apply no-underline border-b-2 border-yellow-200 dark:text-white hover:border-yellow-400;
     }
 
     .post-content img {
