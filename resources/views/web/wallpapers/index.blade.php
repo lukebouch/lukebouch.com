@@ -14,7 +14,7 @@
                 <li class="grid gap-5">
                     <a href="{{ route('wallpapers.download', [$wallpaper]) }}">
                         <div
-                            class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500">
+                            class="block w-full overflow-hidden bg-gray-100 rounded-lg shadow-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500">
                             <img src="{{ $wallpaper->media('wallpapers')->first()?->getUrl() }}" alt=""
                                 class="object-cover pointer-events-none group-hover:opacity-75">
                             <button type="button" class="absolute inset-0 focus:outline-none">
