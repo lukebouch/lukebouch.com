@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="h-full" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body class="font-sans antialiased text-gray-900 dark:bg-gradient-to-br from-gray-800 to-black dark:text-white">
+<body class="h-full font-sans antialiased text-gray-900 dark:bg-gradient-to-br from-gray-800 to-black dark:text-white">
     <x-web.navigation />
     <main class="py-5">
         {{ $slot }}
