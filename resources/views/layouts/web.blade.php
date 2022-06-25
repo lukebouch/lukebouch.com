@@ -24,7 +24,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body class="h-full font-sans antialiased text-gray-900 dark:bg-gradient-to-br from-gray-800 to-black dark:text-white">
+<body class="h-full font-sans antialiased text-gray-900 dark:bg-slate-800 dark:text-white">
     <x-web.navigation />
     <main class="py-5">
         {{ $slot }}
