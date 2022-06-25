@@ -33,3 +33,5 @@ Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 Route::post('/webhooks/sync-blog-posts', [WebhookController::class, 'syncBlogPosts'])->name('webhooks.sync-blog-posts');
 
 require __DIR__ . '/auth.php';
+
+Route::redirect('/around', 'https://around.co/r/lukebouch');
