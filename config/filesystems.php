@@ -79,6 +79,19 @@ return [
             'throw' => false,
         ],
 
+        Disk::BACKUPS => [
+            'driver' => 's3',
+            'visibility' => 'private',
+            'key' => env('S3_BACKUPS_ACCESS_KEY_ID'),
+            'secret' => env('S3_BACKUPS_SECRET_ACCESS_KEY'),
+            'region' => env('S3_BACKUPS_DEFAULT_REGION'),
+            'bucket' => env('S3_BACKUPS_BUCKET'),
+            'url' => env('S3_BACKUPS_URL'),
+            'endpoint' => env('S3_BACKUPS_ENDPOINT'),
+            'use_path_style_endpoint' => env('S3_BACKUPS_USE_PATH_STYLE_ENDPOINT', false),
+            'throw' => false,
+        ],
+
     ],
 
     /*

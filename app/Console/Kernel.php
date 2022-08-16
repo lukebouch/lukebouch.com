@@ -15,7 +15,16 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('sublime-blogs:sync')->daily();
+        $schedule->command('backup:clean')
+            ->daily()
+            ->at('01:00');
+
+        $schedule->command('backup:run')
+            ->daily()
+            ->at('01:30');
+
+        $schedule->command('sublime-blogs:sync')
+            ->daily();
     }
 
     /**
