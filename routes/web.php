@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ShortCodeController;
 use App\Http\Controllers\WallpaperController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\WebhookController;
@@ -33,5 +34,7 @@ Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 Route::post('/webhooks/sync-blog-posts', [WebhookController::class, 'syncBlogPosts'])->name('webhooks.sync-blog-posts');
 
 require __DIR__ . '/auth.php';
+
+Route::get('/u/{shortCode:code}', ShortCodeController::class)->name('shortCode');
 
 Route::redirect('/around', 'https://around.co/r/lukebouch');
