@@ -36,5 +36,3 @@ Route::post('/webhooks/sync-blog-posts', [WebhookController::class, 'syncBlogPos
 require __DIR__ . '/auth.php';
 
 Route::get('/u/{shortCode:code}', ShortCodeController::class)->name('shortCode');
-
-Route::redirect('/around', 'https://around.co/r/lukebouch');
