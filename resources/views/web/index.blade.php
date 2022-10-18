@@ -1,5 +1,5 @@
 <x-web-layout>
-    <section class="p-5 md:px-14 mx-auto">
+    <section class="p-5 md:px-14">
         <img class="rounded-full w-16" src="{{ asset('images/profile-small.png') }}"/>
         <h1 class="mt-5 text-4xl font-bold tracking-tight leading-snug text-zinc-900">Web Developer, Tech
             Enthusiast<br/> and Follower of Christ.</h1>
