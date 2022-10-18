@@ -7,7 +7,7 @@
             able to explore and enjoy numerous hobbies that keep me busy in between work and serving at church. I enjoy using well-designed software and have a passion for creating
             great UI/UX.</p>
 
-        <div class="mt-16 -mx-48 grid grid-cols-5 gap-14">
+        <div class="p-5 mt-10 md:-mx-52 grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-14">
             <img class="my-auto rounded-md shadow-md rotate-6"
                  src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/a8b237e0-b84f-4d7f-ab18-124a9518c826.jpg"
                  alt="Luke's Jeep in a construction site on the edge of a mound of dirt."/>
