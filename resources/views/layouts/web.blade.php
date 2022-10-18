@@ -25,7 +25,7 @@
 </head>
 
 <body class="h-full font-sans antialiased text-gray-900 bg-zinc-50">
-<div class="h-full max-w-5xl mx-auto bg-white border-l border-r">
+<div class="h-auto min-h-full max-w-5xl mx-auto bg-white border-l border-r">
     <x-web.navigation/>
     <main class="py-5">
         {{ $slot }}
