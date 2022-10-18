@@ -2,7 +2,7 @@
     <section class="p-5 md:px-14">
         <img class="rounded-full w-16" src="{{ asset('images/profile-small.png') }}"/>
         <h1 class="mt-5 text-4xl font-bold tracking-tight leading-snug text-zinc-900">Web Developer, Tech
-            Enthusiast<br/> and Follower of Christ.</h1>
+            Enthusiast,<br/> and Follower of Christ.</h1>
         <p class="text-zinc-600 leading-relaxed">Homeschooled by my mom and equipped by my dad with a vast knowledge of engines and electricity, I have been
             able to explore and enjoy numerous hobbies that keep me busy in between work and serving at church. I enjoy using well-designed software and have a passion for creating
             great UI/UX.</p>
