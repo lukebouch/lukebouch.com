@@ -22,9 +22,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('backup:run')
             ->daily()
             ->at('01:30');
-
-        $schedule->command('sublime-blogs:sync')
-            ->daily();
     }
 
     /**
