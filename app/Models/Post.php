@@ -13,6 +13,8 @@ class Post extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
 
+    protected $guarded = [];
+
     protected $casts = [
         'published_at' => 'datetime',
     ];
