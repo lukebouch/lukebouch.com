@@ -14,7 +14,7 @@ class Post extends Model implements HasMedia
     use HasFactory, InteractsWithMedia;
 
     protected $casts = [
-        'published_at' => 'datetime'
+        'published_at' => 'datetime',
     ];
 
     protected $fillable = [
@@ -30,6 +30,14 @@ class Post extends Model implements HasMedia
         static::addGlobalScope('chronological', function (Builder $builder) {
             $builder->orderBy('published_at', 'desc');
         });
+    }
+
+    /**
+     * Get the excerpt of the post.
+     */
+    public function getExcerptAttribute()
+    {
+        return str($this->text)->substr(0, 70);
     }
 
     public function getStatusAttribute()
