@@ -1,5 +1,5 @@
 <x-web-layout>
-    <section class="flex items-center justify-center px-4 pb-24 text-center md:pb-40 py-28">
+    <section class="p-5 md:px-14 flex items-center justify-center pb-24 text-center md:pb-40 py-28">
         <h1 class="text-3xl md:text-5xl">Exceptional Wallpaper
             <div class="mt-3 text-xl">for
                 <x-icons.phone /> Phone +
@@ -8,7 +8,7 @@
             </div>
         </h1>
     </section>
-    <section class="container px-4">
+    <section class="p-5 md:px-14 ">
         <ul class="grid gap-10 mb-8 md:grid-cols-3">
             @foreach ($wallpapers as $wallpaper)
                 <li class="grid gap-5">

@@ -1,39 +1,28 @@
 <x-web-layout>
-    <section class="container flex items-center px-6">
-        <div class="flex-1">
-            <h1 class="h-card" rel="me" href="https://lukebouch.com/">Luke Bouch</h1>
-            <p>I'm a junior developer at Wilber Group where I aid in the development and maintance of custom business
-                applications.</p>
-        </div>
-        <div class="w-1/2 md:w-1/3 flex-inital">
-            <img class=" drop-shadow-md" src="/images/lukebouch-cutout.png" alt="Luke Bouch">
-        </div>
-    </section>
-    <section class="max-w-6xl px-4 mx-auto">
-        <div class="px-6 py-8 text-white rounded-md shadow-xl bg-sky-500">
-            <div class="container space-y-5">
-                <h2>Recent Blog Posts</h2>
-                @unless($posts->isEmpty())
-                    <ol class="grid gap-6 md:grid-cols-3">
-                        @foreach ($posts as $post)
-                            <li class="space-y-2">
-                                @isset($page->title)
-                                    <h3>{{ $page->title }}</h3>
-                                @endisset
-                                <div>
-                                    <a class="font-medium"
-                                        href="{{ route('posts.show', [$post->slug]) }}">{{ $post->published_at->setTimezone('America/New_York')->format('g:ia \o\n F j, Y') }}</a>
-                                </div>
-                                <div class="line-clamp-5">
-                                    {{ $post->text }}
-                                </div>
-                                <a class="inline-block font-semibold border-b-2 border-white"
-                                    href="{{ route('posts.show', [$post->slug]) }}">Read</a>
-                            </li>
-                        @endforeach
-                    </ol>
-                @endunless
-            </div>
+    <section class="p-5 md:px-14">
+        <img class="rounded-full w-16" src="{{ asset('images/profile-small.png') }}"/>
+        <h1 class="mt-5 text-4xl font-bold tracking-tight leading-snug text-zinc-900">Web Developer, Tech
+            Enthusiast,<br/> and Follower of Christ.</h1>
+        <p class="text-zinc-600 leading-relaxed">Homeschooled by my mom and equipped by my dad with a vast knowledge of engines and electricity, I have been
+            able to explore and enjoy numerous hobbies that keep me busy in between work and serving at church. I enjoy using well-designed software and have a passion for creating
+            great UI/UX.</p>
+
+        <div class="p-5 mt-10 md:-mx-52 grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-14">
+            <img class="my-auto rounded-md shadow-md rotate-6"
+                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/a8b237e0-b84f-4d7f-ab18-124a9518c826.jpg"
+                 alt="Luke's Jeep in a construction site on the edge of a mound of dirt."/>
+            <img class="my-auto rounded-md shadow-md -rotate-6"
+                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/8840022f-00f1-4fed-ad4c-0a5fa66fc22f.jpg"
+                 alt=""/>
+            <img class="my-auto rounded-md shadow-md rotate-6"
+                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/c6e4d2b7-52c2-42ef-a40f-b37bf5e77b97.jpg"
+                 alt=""/>
+            <img class="my-auto rounded-md shadow-md -rotate-6"
+                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/17a70ba3-104c-4a3e-8e2f-976187a2cfb7.jpg"
+                 alt=""/>
+            <img class="my-auto rounded-md shadow-md rotate-6"
+                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/8caa6e45-e559-4977-b8ab-33254afb57ec.jpg"
+                 alt=""/>
         </div>
     </section>
 </x-web-layout>
