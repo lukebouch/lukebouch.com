@@ -9,20 +9,20 @@
 
         <div class="p-5 mt-10 md:-mx-52 grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-14">
             <img class="my-auto rounded-md shadow-md rotate-6"
-                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/a8b237e0-b84f-4d7f-ab18-124a9518c826.jpg"
+                 src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450760/pulling-a-dent-on-my-chevy-colorado.jpg"
+                 alt="Luke working on pulling a dent out of his truck"/>
+            <img class="my-auto rounded-md shadow-md -rotate-6"
+                 src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666451425/jeep-cherokee-on-a-mound-of-dirt.jpg"
                  alt="Luke's Jeep in a construction site on the edge of a mound of dirt."/>
-            <img class="my-auto rounded-md shadow-md -rotate-6"
-                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/8840022f-00f1-4fed-ad4c-0a5fa66fc22f.jpg"
-                 alt=""/>
             <img class="my-auto rounded-md shadow-md rotate-6"
-                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/c6e4d2b7-52c2-42ef-a40f-b37bf5e77b97.jpg"
-                 alt=""/>
+                 src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450739/playing-with-snap-circuits.jpg"
+                 alt="Luke playing with Snap Circuits when he was 3 years old"/>
             <img class="my-auto rounded-md shadow-md -rotate-6"
-                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/17a70ba3-104c-4a3e-8e2f-976187a2cfb7.jpg"
-                 alt=""/>
+                 src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450764/lukebouch-and-jake-bennett.jpg"
+                 alt="Luke and Jake standing together in a restaurant"/>
             <img class="my-auto rounded-md shadow-md rotate-6"
-                 src="https://static.sublimeblogs.com/uploads/JDJ5JDEwJHNmNUNLZXU2Li5JTGpvRmJ6aTByNC5rczlNaXB3VUx6bnFxa0VqMXVFZGJOejBkYjRaU0ZL/8caa6e45-e559-4977-b8ab-33254afb57ec.jpg"
-                 alt=""/>
+                 src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450770/lukebouch-with-a-camera-bag.jpg"
+                 alt="Luke with a camera bag on when he was much younger"/>
         </div>
     </section>
 </x-web-layout>
