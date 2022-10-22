@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Enums\TagType;
 use App\Filament\Resources\PostResource\Pages;
 use App\Filament\Resources\PostResource\RelationManagers;
 use App\Models\Post;
@@ -28,6 +29,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('title'),
                 Forms\Components\TextInput::make('slug'),
                 Forms\Components\MarkdownEditor::make('content')->columnSpan(2),
+                Forms\Components\SpatieTagsInput::make('tags')->type(TagType::Post),
             ]);
     }
 
