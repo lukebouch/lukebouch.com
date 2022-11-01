@@ -30,7 +30,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('slug'),
                 Forms\Components\MarkdownEditor::make('content')->columnSpan(2),
                 Forms\Components\SpatieTagsInput::make('tags')->type(TagType::Post),
-                Forms\Components\DateTimePicker::make('published_at'),
+                Forms\Components\DateTimePicker::make('published_at')->withoutSeconds(),
             ]);
     }
 
