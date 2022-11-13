@@ -31,8 +31,6 @@ Route::prefix('/wallpapers')->name('wallpapers')->group(function () {
 
 Route::get('/feed.xml', [FeedController::class, 'rss'])->name('feeds.rss');
 
-Route::post('/webhooks/sync-blog-posts', [WebhookController::class, 'syncBlogPosts'])->name('webhooks.sync-blog-posts');
-
 require __DIR__ . '/auth.php';
 
 Route::get('/u/{shortCode:code}', ShortCodeController::class)->name('shortCode');
