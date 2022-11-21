@@ -31,7 +31,19 @@ class Post extends Model implements HasMedia
     protected static function booted()
     {
         static::addGlobalScope('chronological', function (Builder $builder) {
-            $builder->orderBy('published_at', 'desc');
+            $builder->published()->orderBy('published_at', 'desc');
+        });
+
+        static::creating(function (Post $post) {
+            if (filled($post->title)) {
+                $contentSlug = str($post->title)->slug();
+            } else {
+                // If the post does not have a title
+                // create a slug from the first few words of the content
+                $contentSlug = strtolower(implode('-', array_slice(explode(' ', $post->content), 0, 3)));
+            }
+
+            $post->slug = now()->format('Y/m/d') . "/$contentSlug";
         });
     }
 
@@ -51,7 +63,7 @@ class Post extends Model implements HasMedia
             return 'Scheduled';
         } else {
             return 'Draft';
-        };
+        }
     }
 
     public function getContentAttribute($content)

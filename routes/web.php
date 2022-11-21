@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WebController::class, 'index']);
 Route::prefix('/posts')->name('posts')->group(function () {
     Route::get('/', [PostController::class, 'index'])->name('.index');
-    Route::get('/{post:slug}', [PostController::class, 'show'])->name('.show');
+    Route::get('/{post:slug}', [PostController::class, 'show'])->where('post:slug', '.*')->name('.show');
 });
 Route::prefix('/wallpapers')->name('wallpapers')->group(function () {
     Route::get('/', [WallpaperController::class, 'index'])->name('.index');
