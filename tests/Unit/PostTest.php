@@ -38,4 +38,23 @@ class PostTest extends TestCase
             'slug' => now()->format('Y/m/d') . '/this-is-a',
         ]);
     }
+
+    /** @test */
+    public function it_does_not_change_the_slug_when_updating_the_title_or_content()
+    {
+        $post = Post::factory()->create();
+        $post->slug = 'Test';
+        $post->save();
+
+        $post->title = 'New title';
+        $post->content = 'New content';
+        $post->save();
+
+        $this->assertDatabaseHas('posts', [
+           'id' => $post->id,
+           'slug' => 'Test',
+           'title' => 'New title',
+           'content' => 'New content'
+        ]);
+    }
 }
