@@ -31,7 +31,7 @@ class Post extends Model implements HasMedia
     protected static function booted()
     {
         static::addGlobalScope('chronological', function (Builder $builder) {
-            $builder->published()->orderBy('published_at', 'desc');
+            $builder->orderBy('published_at', 'desc');
         });
 
         static::creating(function (Post $post) {
@@ -45,6 +45,11 @@ class Post extends Model implements HasMedia
 
             $post->slug = now()->format('Y/m/d') . "/$contentSlug";
         });
+    }
+
+    public function scopePublished(Builder $query)
+    {
+        $query->where('published_at', '<=', now());
     }
 
     /**
