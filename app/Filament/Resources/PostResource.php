@@ -27,7 +27,6 @@ class PostResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title'),
-                Forms\Components\TextInput::make('slug')->required(),
                 Forms\Components\MarkdownEditor::make('content')->columnSpan(2),
                 Forms\Components\SpatieTagsInput::make('tags')->type(TagType::Post),
                 Forms\Components\DateTimePicker::make('published_at')->withoutSeconds(),
