@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(12);
+        $posts = Post::query()->published()->paginate(12);
 
         return view('web.posts.index', [
             'posts' => $posts,
