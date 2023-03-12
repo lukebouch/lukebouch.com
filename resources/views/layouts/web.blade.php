@@ -28,8 +28,10 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <!-- Scripts -->
-    <script src="https://cdn.usefathom.com/script.js" data-site="KZCYFXBL" defer></script>
-    
+    @if(env('app.enviroment' === 'production'))
+        <script src="https://cdn.usefathom.com/script.js" data-site="KZCYFXBL" defer></script>
+    @endif
+
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
