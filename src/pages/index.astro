@@ -1,15 +1,52 @@
 ---
+import Layout from '../components/Layout.astro';
+import profile from '../images/profile-small.png';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Luke Bouch">
+  <section class="p-5 md:px-14">
+    <img class="rounded-full w-16" src={profile} />
+    <h1
+      class="mt-5 text-4xl font-bold tracking-tight leading-snug text-zinc-900"
+    >
+      Web Developer, Tech Enthusiast,<br /> and Follower of Christ.
+    </h1>
+    <p class="text-zinc-600 leading-relaxed">
+      Homeschooled by my mom and equipped by my dad with a vast
+      knowledge of engines and electricity, I have been able to
+      explore and enjoy numerous hobbies that keep me busy in between
+      work and serving at church. I enjoy using well-designed software
+      and have a passion for creating great UI/UX.
+    </p>
+
+    <div
+      class="p-5 mt-10 md:-mx-52 grid grid-cols-1 md:grid-cols-5 gap-20 md:gap-14"
+    >
+      <img
+        class="my-auto rounded-md shadow-md rotate-6"
+        src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450760/pulling-a-dent-on-my-chevy-colorado.jpg"
+        alt="Luke working on pulling a dent out of his truck"
+      />
+      <img
+        class="my-auto rounded-md shadow-md -rotate-6"
+        src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666451425/jeep-cherokee-on-a-mound-of-dirt.jpg"
+        alt="Luke's Jeep in a construction site on the edge of a mound of dirt."
+      />
+      <img
+        class="my-auto rounded-md shadow-md rotate-6"
+        src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450739/playing-with-snap-circuits.jpg"
+        alt="Luke playing with Snap Circuits when he was 3 years old"
+      />
+      <img
+        class="my-auto rounded-md shadow-md -rotate-6"
+        src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450764/lukebouch-and-jake-bennett.jpg"
+        alt="Luke and Jake standing together in a restaurant"
+      />
+      <img
+        class="my-auto rounded-md shadow-md rotate-6"
+        src="https://res.cloudinary.com/dboc6eerh/image/upload/v1666450770/lukebouch-with-a-camera-bag.jpg"
+        alt="Luke with a camera bag on when he was much younger"
+      />
+    </div>
+  </section>
+</Layout>
