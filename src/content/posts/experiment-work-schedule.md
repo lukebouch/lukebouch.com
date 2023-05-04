@@ -1,5 +1,5 @@
 ---
-title: Experiment: Work Schedule
+title: 'Experiment: Work Schedule'
 publish_date: 2022-11-06T03:12:00+00:00
 ---
 
