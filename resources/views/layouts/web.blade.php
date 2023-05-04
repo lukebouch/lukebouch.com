@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <!-- Scripts -->
-    <script src="https://cdn.usefathom.com/script.js" data-site="KZCYFXBL" defer></script>
+    <script src="https://twentyfour-bright.lukebouch.com/script.js" data-site="KZCYFXBL" defer></script>
     
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
