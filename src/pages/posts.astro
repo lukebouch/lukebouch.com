@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../components/Layout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { marked } from 'marked';
+
+const posts = await getCollection('posts');
+const sortedPosts = posts.sort(
+  (a, b) =>
+    b.data.publish_date.getTime() - a.data.publish_date.getTime()
+);
+---
+
+<Layout title="Luke Bouch - Posts">
+  <section class="px-5 py-10 mt-5 text-center container-sm">
+    <h1>Blog</h1>
+  </section>
+  <section class="px-5 container-sm">
+    <ol class="space-y-8 divide-y">
+      {
+        posts.map((post) => (
+          <li>
+            <article class="pt-5 h-entry">
+              {typeof post.data.title == 'string' ? (
+                <a class="u-url" href={'/posts/' + post.slug}>
+                  <h2 class="p-name font-semibold text-lg">
+                    {post.data.title}
+                  </h2>
+                </a>
+              ) : (
+                <div
+                  class="e-content post-content p-name"
+                  set:html={marked.parse(post.body)}
+                />
+              )}
+
+              <a class="u-url" href={'/posts/' + post.slug}>
+                <FormattedDate date={post.data.publish_date} />
+              </a>
+
+              <div class="hidden dt-published">TODO</div>
+              <a
+                rel="author"
+                class="hidden p-author h-card"
+                href="https://lukebouch.com"
+              >
+                Luke Bouch
+              </a>
+            </article>
+          </li>
+        ))
+      }
+    </ol>
+    <div class="mt-8">pagination</div>
+  </section>
+</Layout>
