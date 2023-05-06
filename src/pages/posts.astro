@@ -13,7 +13,7 @@ const sortedPosts = posts.sort(
 
 <Layout title="Luke Bouch - Posts">
   <section class="px-5 py-10 mt-5 text-center container-sm">
-    <h1>Blog</h1>
+    <h1 class="text-4xl font-bold">Blog Posts</h1>
   </section>
   <section class="px-5 container-sm">
     <ol class="space-y-8 divide-y">
@@ -23,7 +23,7 @@ const sortedPosts = posts.sort(
             <article class="pt-5 h-entry">
               {typeof post.data.title == 'string' ? (
                 <a class="u-url" href={'/posts/' + post.slug}>
-                  <h2 class="p-name font-semibold text-lg">
+                  <h2 class="p-name font-semibold text-2xl mb-1">
                     {post.data.title}
                   </h2>
                 </a>
