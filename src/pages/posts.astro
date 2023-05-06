@@ -18,7 +18,7 @@ const sortedPosts = posts.sort(
   <section class="px-5 container-sm">
     <ol class="space-y-8 divide-y">
       {
-        posts.map((post) => (
+        sortedPosts.map((post) => (
           <li>
             <article class="pt-5 h-entry">
               {typeof post.data.title == 'string' ? (
