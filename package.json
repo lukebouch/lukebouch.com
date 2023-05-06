@@ -17,7 +17,10 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^2.3.3",
+    "highlight.js": "^11.8.0",
     "marked": "^5.0.0",
+    "marked-highlight": "^1.0.1",
+    "marked-mangle": "^1.0.1",
     "tailwindcss": "^3.0.24"
   }
 }
