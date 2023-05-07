@@ -34,9 +34,17 @@ const sortedPosts = posts.sort(
                 />
               )}
 
-              <a class="u-url" href={'/posts/' + post.slug}>
-                <FormattedDate date={post.data.publish_date} />
-              </a>
+              <div class="flex gap-3">
+                <a class="u-url" href={'/posts/' + post.slug}>
+                  <FormattedDate date={post.data.publish_date} />
+                </a>
+
+                {typeof post.data.title !== 'string' && (
+                  <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                    Micropost
+                  </span>
+                )}
+              </div>
 
               <div class="hidden dt-published">TODO</div>
               <a
