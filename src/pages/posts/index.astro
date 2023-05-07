@@ -22,7 +22,11 @@ const sortedPosts = posts.sort(
           <li>
             <article class="pt-5 h-entry">
               {typeof post.data.title == 'string' ? (
-                <a class="u-url" href={'/posts/' + post.slug}>
+                <a
+                  class="u-url"
+                  href={'/posts/' + post.slug}
+                  rel="prefetch"
+                >
                   <h2 class="p-name font-semibold text-2xl mb-1">
                     {post.data.title}
                   </h2>
@@ -35,7 +39,11 @@ const sortedPosts = posts.sort(
               )}
 
               <div class="flex gap-3">
-                <a class="u-url" href={'/posts/' + post.slug}>
+                <a
+                  class="u-url"
+                  href={'/posts/' + post.slug}
+                  rel="prefetch"
+                >
                   <FormattedDate date={post.data.publish_date} />
                 </a>
 
