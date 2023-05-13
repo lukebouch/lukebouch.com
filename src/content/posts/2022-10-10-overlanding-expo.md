@@ -1,5 +1,5 @@
 ---
-title: Overlanding Expo
+title: Overlanding Expo East 2022
 publish_date: 2022-10-10T01:05:12+00:00
 ---
 
