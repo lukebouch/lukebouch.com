@@ -5,10 +5,14 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import marked from '../../utilities/marked';
 
 const posts = await getCollection('posts');
-const sortedPosts = posts.sort(
-  (a, b) =>
-    b.data.publish_date.getTime() - a.data.publish_date.getTime()
-);
+const sortedPosts = posts
+  .filter((post) => {
+    return post.data.title;
+  })
+  .sort(
+    (a, b) =>
+      b.data.publish_date.getTime() - a.data.publish_date.getTime()
+  );
 ---
 
 <Layout title="Luke Bouch - Posts">
