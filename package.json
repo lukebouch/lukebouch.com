@@ -20,6 +20,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^2.3.3",
+    "astro-seo": "^0.7.2",
     "highlight.js": "^11.8.0",
     "marked": "^5.0.0",
     "marked-highlight": "^1.0.1",
