@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from './Footer/index.astro';
 import '../main.css';
 ---
 
@@ -77,10 +78,7 @@ import '../main.css';
       <main class="py-5">
         <slot />
       </main>
-
-      <footer class="py-10 text-center text-gray-500">
-        <a href="/feed.xml">RSS Feed</a>
-      </footer>
+      <Footer />
     </div>
     <script src="../app.js"></script>
   </body>
