@@ -1,6 +1,6 @@
 ---
 title: Cubital Tunnel Syndrome
-publish_date: 
+publish_date:
 ---
 
 Shortly after starting my first full-time job as a web developer, I started experiencing pretty significant pain in my hands. At the time of this writing, it’s been about 10 months and I can’t remember exactly how it started. I think it started in my fingers but I do know a few months into it I had severe pain in both of my wrists.
@@ -15,4 +15,12 @@ In the mean time, I continued to research my symptoms and talk to anyone I could
 
 I friend at church suggested a see go a physical therapist and like the doctor, she suspected a nerve problem. The ulnar in particular. She gave me lots of great suggestions and nerve glides to do. These seemed to have great results initially but after about two or three weeks, the pain came right back.
 
-As I waited to have the EMG test done, the pain kept getting worse. It also spread from being mostly localized to my wrists and hands to now running up my arms almost to my shoulders. 
+As I waited to have the EMG test done, the pain kept getting worse. It also spread from being mostly localized to my wrists and hands to now running up my arms almost to my shoulders.
+
+It was around this time (or maybe even a little earlier) that I began trying to get my keyboard lower. This brought my arms to more of a 90 degree angle or mayben ecen a little less than that.
+
+I started to notice the pain lessening. There were ecen a few weeks where the pain was almost completely gone. Because of this, I almomst cancelled my EMG test but my mom was insistant I not. And I'm so glad I listened to her. Thanks, mom!
+
+I had the test done which was very uncomfortable and painful experience. I was poked and proded with needles and shocked with electricity dozens apon dozens of times.
+
+It took a week or two until I could get and appountment to go over the results with the doctor. Everything looked totally normal in the results but the doctor said he still suspected cubital tunnel syndrome.
