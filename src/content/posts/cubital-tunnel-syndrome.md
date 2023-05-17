@@ -1,6 +1,6 @@
 ---
 title: Cubital Tunnel Syndrome
-publish_date: 
+publish_date:
 ---
 
 Shortly after starting my first full-time job as a web developer, I started experiencing pretty significant pain in my hands. At the time of this writing, it’s been about 10 months and I can’t remember exactly how it started. I think it started in my fingers but I do know a few months into it I had severe pain in both of my wrists.
