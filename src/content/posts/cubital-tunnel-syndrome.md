@@ -34,3 +34,11 @@ Next, the doctor recommended I get night time braces to keep my arms at about a 
 I wore the braces for over a month with negligible results. In fact, sometimes it even felt worse after wearing them. I even broke on in my sleep. Oops 😁. The doctor said since they didn’t seem to be helping, not to bother with wearing them. Or at least not wear the **one** I have left.
 
 At this point, I was running out of non-surgical options and so after thinking about it got a week or two, I called and scheduled the surgery.
+
+I was actually able to get an appointment relatively fast because there were some cancellations. About two weeks later, I was in the waiting room.
+
+I was extremely nervous about the surgery but by God’s grace, everything went very smoothly. I was knocked out so good that I don’t remember a thing about the surgery and very little of before and after.
+
+I was on the couch the first few days but by Monday, the surgery was on Friday) I had my splint off and was able to move my arm.
+
+It took the better part of a week before I was moving my arm freely without discomfort.
