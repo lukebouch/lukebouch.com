@@ -1,5 +1,5 @@
 ---
-title: Monthly vs. Yearly Billing
+title: Monthly Vs. Yearly Billing
 publish_date: 2023-05-17T22:17:00+00:00
 ---
 
