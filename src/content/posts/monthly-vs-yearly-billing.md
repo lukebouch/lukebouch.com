@@ -11,7 +11,7 @@ After using the note taking app Bear for about 9 months, I started realizing I w
 
 Once I had found what I was looking for, I started taking all my notes in the new system. Why would I write notes in the old app whose days are numbered. Literally, since I had already cancelled my subscription the days left on my yearly plan were counting down.
 
-And here lies the problem. When I switched from one thing to another, I usually do so preemptively. And most of the time, I give myself more time to switch than is necessary. In this example, I payed for an entire year and saved about 16% but ended up wasting about 25% of the subscription because I switched to a different app before the plan expired. I would have been better off paying monthly rather than yearly.
+And here lies the problem. When I switched from one thing to another, I usually do so preemptively. And most of the time, I give myself more time to switch than is necessary. In this example, **I payed for an entire year and saved about 16% but ended up wasting about 25% of the subscription because I switched to a different app before the plan expired.** I would have been better off paying monthly rather than yearly.
 
 Now don't get me wrong, yearly does have it's advantages. It did keep me using Bear for 9 months instead of jumping back and forth, trying out different apps, because I had already paid for Bear Pro. If you know you are going to use something for at least a year, paying for a whole year in advance can save you money. But in general, I think monthly subscriptions are the way to go because they are, in my opinion, cheaper on average and offer more flexibility.
 
