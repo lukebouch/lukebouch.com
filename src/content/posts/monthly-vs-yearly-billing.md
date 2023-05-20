@@ -1,6 +1,6 @@
 ---
 title: Monthly Vs. Yearly Billing
-publish_date: 2023-05-17T22:17:00+00:00
+publish_date: 2023-05-20T08:58:00+00:00
 ---
 
 This is a blog post I've been meaning to write for a while. I'm actually glad I waited this long as my opinion on it has changed slightly.
