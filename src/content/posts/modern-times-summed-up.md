@@ -1,5 +1,5 @@
 ---
-title: 
+title: Modern Times Summed Up
 publish_date: 2022-04-27T13:35:07+00:00
 ---
 
