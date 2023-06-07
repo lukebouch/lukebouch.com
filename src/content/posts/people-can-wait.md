@@ -1,6 +1,6 @@
 ---
 title: People Can Wait
-publish_date: 
+publish_date: 2023-06-07T03:00:46+00:00
 ---
 
 This is something my parents have been telling me for years but until now, I did not agree with them. After [reducing the notifications I get on my phone](/posts/reducing-notifications) and realizing what a relief it has been, I’m considering turning off notifications for all texts and instant messages.
