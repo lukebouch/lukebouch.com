@@ -1,7 +1,7 @@
-—--
+---
 title: iPhone 13 mini
 publish_date: 2021-11-30T08:47:28+00:00
-—--
+---
 
 Last week, I received my iPhone 13 mini after ordering it a few days prior. I decided to upgrade from my iPhone XS to the 13 mini because Verizon was running a promotional. I only paid a few dollars after trading in my old iPhone XS, and it made sense to take advantage of the offer while my XS was still worth something.
 
