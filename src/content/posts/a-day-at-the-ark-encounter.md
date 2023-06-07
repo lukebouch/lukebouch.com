@@ -17,4 +17,22 @@ The last thing, which may be obvious to some, it would have smelled horrible in 
 
 We made some great memories and I came back with some fantastic photos.
 
-![](https://lukebouch.com/uploads/2021/bf898f60f0.jpg)![](https://lukebouch.com/uploads/2021/fcd269469b.jpg)![](https://lukebouch.com/uploads/2021/c6334ab3a4.jpg)![](https://lukebouch.com/uploads/2021/5dbd6ee18c.jpg)![](https://lukebouch.com/uploads/2021/c7d44931e4.jpg)![](https://lukebouch.com/uploads/2021/a791506aa4.jpg)![](https://lukebouch.com/uploads/2021/e666658502.jpg)![](https://lukebouch.com/uploads/2021/063e365ee4.jpg)![](https://lukebouch.com/uploads/2021/c5e995f84b.jpg)![](https://lukebouch.com/uploads/2021/71084559d9.jpg)![](https://lukebouch.com/uploads/2021/f771ec9bd2.jpg)![](https://lukebouch.com/uploads/2021/509d0aa8c6.jpg)![](https://lukebouch.com/uploads/2021/75974304d7.jpg)![](https://lukebouch.com/uploads/2021/2934005d61.jpg)![](https://lukebouch.com/uploads/2021/c7ad772034.jpg)![](https://lukebouch.com/uploads/2021/8c237bba12.jpg)![](https://lukebouch.com/uploads/2021/f6b0222e67.jpg)![](https://lukebouch.com/uploads/2021/69e4d9b868.jpg)![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/52/b3c87641-808e-400f-baec-3b9478b9efbb.png)
+![](https://static.lukebouch.com/bf898f60f0.jpg)
+![](https://static.lukebouch.com/fcd269469b.jpg)
+![](https://static.lukebouch.com/c6334ab3a4.jpg)
+![](https://static.lukebouch.com/5dbd6ee18c.jpg)
+![](https://static.lukebouch.com/c7d44931e4.jpg)
+![](https://static.lukebouch.com/a791506aa4.jpg)
+![](https://static.lukebouch.com/e666658502.jpg)
+![](https://static.lukebouch.com/063e365ee4.jpg)
+![](https://static.lukebouch.com/c5e995f84b.jpg)
+![](https://static.lukebouch.com/71084559d9.jpg)
+![](https://static.lukebouch.com/f771ec9bd2.jpg)
+![](https://static.lukebouch.com/509d0aa8c6.jpg)
+![](https://static.lukebouch.com/75974304d7.jpg)
+![](https://static.lukebouch.com/2934005d61.jpg)
+![](https://static.lukebouch.com/c7ad772034.jpg)
+![](https://static.lukebouch.com/8c237bba12.jpg)
+![](https://static.lukebouch.com/f6b0222e67.jpg)
+![](https://static.lukebouch.com/69e4d9b868.jpg)
+![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/52/b3c87641-808e-400f-baec-3b9478b9efbb.png)
