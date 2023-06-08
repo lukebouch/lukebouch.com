@@ -1,9 +1,11 @@
 ---
+import { SEO } from 'astro-seo';
 import Layout from '../components/Layout.astro';
 import profile from '../images/profile-small.png';
 ---
 
 <Layout title="Luke Bouch">
+  <SEO title="The personal website of Luke Bouch." slot="seo" />
   <section class="p-5 md:px-14">
     <img class="rounded-full w-16" src={profile} />
     <h1

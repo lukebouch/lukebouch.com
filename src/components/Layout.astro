@@ -1,7 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from './Footer/index.astro';
 import '../main.css';
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ const { title } = Astro.props;
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>{title}</title>
+    <slot name="seo" />
 
     <link
       href="/feed.rss"
@@ -72,15 +72,14 @@ const { title } = Astro.props;
   <body class="h-full font-sans antialiased text-gray-900 bg-zinc-50">
     <div
       class="h-auto min-h-full max-w-5xl mx-auto bg-white border-l border-r"
+      id="swup"
     >
       <Navigation />
       <main class="py-5">
         <slot />
       </main>
-
-      <footer class="py-10 text-center text-gray-500">
-        <a href="/feed.xml">RSS Feed</a>
-      </footer>
+      <Footer />
     </div>
+    <script src="../app.js"></script>
   </body>
 </html>

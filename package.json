@@ -14,16 +14,19 @@
     "@astrojs/rss": "^2.4.1",
     "@astrojs/sitemap": "^1.3.0",
     "@astrojs/tailwind": "^3.1.2",
+    "@swup/fade-theme": "^1.0.5",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^2.3.3",
+    "astro-seo": "^0.7.2",
     "highlight.js": "^11.8.0",
     "marked": "^5.0.0",
     "marked-highlight": "^1.0.1",
     "marked-mangle": "^1.0.1",
     "sanitize-html": "^2.10.0",
+    "swup": "^3.0.6",
     "tailwindcss": "^3.0.24"
   }
 }
