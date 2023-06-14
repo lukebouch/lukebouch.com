@@ -7,7 +7,7 @@ I have had the sneaky suspicion that my heater core on my Jeep has been leaking 
 
 It took me Saturday night, most of the day Sunday, and the past several evenings after work to get the job done. And boy was it a big job! I would say I have ~15hrs into it but that also includes flushing out the entire coolant system. 
 
-I'm super glad to have finally have heat that does not result in all the winds fogging up.
+I'm super glad to have finally have heat that does not result in all the windshield fogging up.
 
 ![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/140/6b7beb3a-ab18-4a07-ad67-97762e3adad3.jpg)
 ![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/141/08c66c03-327f-439c-9bf5-c7e121f41d23.jpg)
