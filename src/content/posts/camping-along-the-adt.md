@@ -31,7 +31,7 @@ We got back to the campsite and started preparing dinner. I helped out some but 
 
 ![](https://static.lukebouch.com/posts/camping-along-the-adt/DSC08112-Enhanced-NR.jpg)
 
-Almost every trop we forget at least something and this time we forgot the oil for the griddle. We made do with the grease from the steaks and a few pieces of bacon we stole from breakfast. In the end though, our steak fajitas turned out amazing! Great work Carson and Levi!
+Almost every trip we forget at least something and this time we forgot the oil for the griddle. We made do with the grease from the steaks and a few pieces of bacon we stole from breakfast. In the end though, our steak fajitas turned out amazing! Great work Carson and Levi!
 
 ![](https://static.lukebouch.com/posts/camping-along-the-adt/IMG_3956.jpg)
 
