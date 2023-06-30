@@ -3,7 +3,7 @@ title: A day at the Ark Encounter
 publish_date: 2021-12-10T10:58:19+00:00
 ---
 
-![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/51/6108aca8-6054-48d2-9fb0-50c0a37c83bf.png)
+![](https://static.lukebouch.com/posts/a-day-at-the-ark-encounter/6108aca8-6054-48d2-9fb0-50c0a37c83bf.jpg)
 
 We arrived at the Ark Encounter about 15 mins before they opened. We purchased our tickets and then took a shuttle from the parking lot to the actual Ark Encounter.
 
