@@ -15,6 +15,9 @@ Here is what I currently use. I'm always finding new hardware and software so th
 - Logitech MX Vertical mouse
 - Caldigit TS3+
 - 11" iPad Pro (1st Generation) with 256GB of storage
+- AirPods Pro (1st Generation)
+- AirPods Max
+- iPhone 13 mini
 
 ### Audio
 
