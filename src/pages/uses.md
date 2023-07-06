@@ -30,6 +30,12 @@ Here is what I currently use. I'm always finding new hardware and software so th
 - Sony a6300
 - DJI Ronin RS 3
 
+### Organization
+
+- [Peak Design Everyday Backpack 30L](https://www.peakdesign.com/products/everyday-backpack?variant=29743300771884)
+- [Tripped Travel Pouch](https://www.trippedtravelgear.com/products/travel-pouch-black)
+- [Uppercase Organizers](https://gouppercase.com/collections/organizer-pouches)
+
 ## Software
 
 - PHPStorm
