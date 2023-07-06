@@ -28,3 +28,4 @@ _Disclaimer: Some of the links below are affiliate links._
 - [NextDNS](https://nextdns.io/?from=fv6gdgxw)
 - [Fathom Analytics](https://usefathom.com/ref/MUTXKR)
 - [You Need A Budget](https://ynab.com/referral/?ref=bzjO719nmjvQhaf6)
+- [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html)
