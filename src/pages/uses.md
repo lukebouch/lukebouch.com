@@ -40,7 +40,7 @@ Here is what I currently use. I'm always finding new hardware and software so th
 
 - PHPStorm
 - Tower
-- VS Code
+- [Nova](https://nova.app/)
 - Ray
 - Raycast
 - iTerm 2
