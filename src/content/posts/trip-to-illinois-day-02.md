@@ -1,6 +1,7 @@
 ---
-title: 'Trip to Illinois: Day 02'
+title: "Trip to Illinois: Day 02"
 publish_date: 2022-09-17T02:51:30+00:00
+tags: ["travel", "work"]
 ---
 
 ![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/127/a9c7d612-df3d-484b-ae11-f1ee24c33667.jpg)
