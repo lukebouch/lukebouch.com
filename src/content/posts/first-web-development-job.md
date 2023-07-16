@@ -1,6 +1,7 @@
 ---
 title: First Web Development Job
 publish_date: 2022-05-11T13:18:21+00:00
+tags: ["work"]
 ---
 
 I want to share what The LORD has done in my life over the last few days.
@@ -12,14 +13,14 @@ We were discussing my options (going to school, freelancing, or applying for a j
 On Friday around 1 pm, I got a text from my cousin. It was a screenshot of an email he had gotten from [Jacob Bennett](http://jakebennett.net). It read
 
 > Hey,
-> 
-> Was looking to talk to your brother Luke but haven’t been able to find a way to get in touch with him. It’s regarding a possible position to work in Laravel at our company [https://wilbergroup.com](https://wilbergroup.com/) in Illinois, remote position of course. I’ve been watching some of the things he’s been working on, [https://sublimeblogs.com/](https://sublimeblogs.com/)  for example and think he would make a great junior developer! Haven’t had any luck finding him but stumbled across your email and thought maybe you could either forward this to him or send me his email so I can contact him directly.
-> 
+>
+> Was looking to talk to your brother Luke but haven’t been able to find a way to get in touch with him. It’s regarding a possible position to work in Laravel at our company [https://wilbergroup.com](https://wilbergroup.com/) in Illinois, remote position of course. I’ve been watching some of the things he’s been working on, [https://sublimeblogs.com/](https://sublimeblogs.com/) for example and think he would make a great junior developer! Haven’t had any luck finding him but stumbled across your email and thought maybe you could either forward this to him or send me his email so I can contact him directly.
+>
 > Thanks for any help!
-> 
+>
 > Jake Bennett
 
-I immediately called my cousin and asked him to forward me the email. I email Jake and told him I was interested and gave him my phone number. He called me a little while later. He asked me a few questions and I walked him through [Sublime Blogs](https://sublimeblogs.com). 
+I immediately called my cousin and asked him to forward me the email. I email Jake and told him I was interested and gave him my phone number. He called me a little while later. He asked me a few questions and I walked him through [Sublime Blogs](https://sublimeblogs.com).
 
 Jake said he had been trying to get in contact with me for the past 10 days but he could not find any contact information. (That is something I will need to add to my website.)
 

@@ -1,6 +1,7 @@
 ---
 title: Camping Along the ADT
 publish_date: 2023-06-23T02:10:47+00:00
+tags: ["travel", "camping"]
 ---
 
 On May 18th, my cousin left Delaware on foot to walk across the United States following the [American Discovery Trail](https://discoverytrail.org). His brother, my brother, I decided to plan a trip to meet up with him in West Virginia and cap with him.

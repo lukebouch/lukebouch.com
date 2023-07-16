@@ -1,6 +1,7 @@
 ---
 title: A day at the Ark Encounter
 publish_date: 2021-12-10T10:58:19+00:00
+tags: ["travel"]
 ---
 
 ![](https://static.lukebouch.com/posts/a-day-at-the-ark-encounter/6108aca8-6054-48d2-9fb0-50c0a37c83bf.jpg)

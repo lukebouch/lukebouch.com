@@ -1,6 +1,7 @@
 ---
 title: Purchasing a 2001 Jeep Cherokee
 publish_date: 2022-08-10T01:16:16+00:00
+tags: ["jeep"]
 ---
 
 I have been wanting to sell my truck and purchase a Jeep for a while. The lack of four wheel drive has been driving me crazy every time it snows. Not that I have anywhere I need to be; I just want to get out and drive in the snow. My brother purchased a Cherokee XJ last week and it was the motivation I needed to finally decide to make the switch.
