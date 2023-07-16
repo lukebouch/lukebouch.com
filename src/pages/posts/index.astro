@@ -34,7 +34,7 @@ const sortedPosts = await getPosts();
 
               <div class="flex gap-3">
                 <a class="u-url" href={'/posts/' + post.slug}>
-                  <FormattedDate date={post.data.publish_date} />
+                  <FormattedDate date={post.data.publish_date} /> { post.data.date && <span class="text-gray-400">(<FormattedDate date={post.data.date} />)</span> }
                 </a>
 
                 {typeof post.data.title !== 'string' && (
