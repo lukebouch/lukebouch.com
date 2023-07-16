@@ -1,6 +1,6 @@
 ---
 title: Boy's Camping Trip 2023
-publish_date: 2023-07-16T20:15:07+00:00
+publish_date: 2023-07-16T21:30:44+00:00
 tags: ["travel", "camping"]
 ---
 
