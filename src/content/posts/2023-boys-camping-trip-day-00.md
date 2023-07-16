@@ -1,5 +1,5 @@
 ---
-title: Boys Camping Trip Day 0
+title: Boy's Camping Trip Day 0
 publish_date: 2023-07-16T20:15:07+00:00
 date: 2023-07-11T04:00:00+00:00
 ---
