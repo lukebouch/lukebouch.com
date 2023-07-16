@@ -28,7 +28,8 @@ export async function getStaticPaths() {
       <a class="hidden u-url" href={'/posts/' + post.slug}></a>
 
       <div>
-        <FormattedDate date={post.data.publish_date} />
+        Published on <FormattedDate date={post.data.publish_date} />
+          {post.data.date ? <span> but events took place on <FormattedDate date={post.data.date} />.</span> : '.'}
       </div>
       <div class="hidden dt-published">{post.data.publish_date}</div>
       <a
