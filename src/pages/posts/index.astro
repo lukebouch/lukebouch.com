@@ -1,19 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../../components/Layouts/Main.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SEO } from 'astro-seo';
 import marked from '../../utilities/marked';
+import { getPosts } from '../../utilities/posts';
 
-const posts = await getCollection('posts');
-const sortedPosts = posts
-  .filter((post) => {
-    return post.data.title;
-  })
-  .sort(
-    (a, b) =>
-      b.data.publish_date.getTime() - a.data.publish_date.getTime()
-  );
+const sortedPosts = await getPosts();
 ---
 
 <Layout>
