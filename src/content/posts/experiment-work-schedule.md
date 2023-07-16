@@ -1,6 +1,7 @@
 ---
-title: 'Experiment: Work Schedule'
+title: "Experiment: Work Schedule"
 publish_date: 2022-11-06T03:12:00+00:00
+tags: ["work"]
 ---
 
 After reading this post from Mike Crittenden on [experimenting on myself](https://critter.blog/2020/09/21/experimenting-on-myself/), I decided to run my own experiment this past week.

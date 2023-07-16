@@ -1,11 +1,12 @@
 ---
 title: Replacing the Heater Core on my 2001 Jeep Cherokee XJ
 publish_date: 2022-10-06T01:09:29+00:00
+tags: ["jeep"]
 ---
 
 I have had the sneaky suspicion that my heater core on my Jeep has been leaking for a little while now and have been waiting for a good time to replace it. With a camping trip coming up, I finally decided to tackle it. I had read online that it would take roughly 5-10 hours to complete so on Saturday evening, I began the process of completely taking the dash apart.
 
-It took me Saturday night, most of the day Sunday, and the past several evenings after work to get the job done. And boy was it a big job! I would say I have ~15hrs into it but that also includes flushing out the entire coolant system. 
+It took me Saturday night, most of the day Sunday, and the past several evenings after work to get the job done. And boy was it a big job! I would say I have ~15hrs into it but that also includes flushing out the entire coolant system.
 
 I'm super glad to have finally have heat that does not result in all the windshield fogging up.
 
@@ -24,6 +25,6 @@ Oh... and it rain all weekend while I was working outside.
 
 On a side note, I went ahead and decided to replace the thermostat because I wanted to remove the housing to properly flush out the engine. These Jeep's take a 180 degree thermostat but it is not uncommon for people to unintentionally, or without knowing better, replace them with a 195 degree and that was the case with my Jeep. Not to mention, some how a o-ring was suck in the thermostat.
 
-With a freshly flushed coolant system and a new thermostat, the Jeep is staying nice and cool. 
+With a freshly flushed coolant system and a new thermostat, the Jeep is staying nice and cool.
 
 ![](https://lukebouch-com.s3.us-west-004.backblazeb2.com/149/2a12bf7e-1924-4ea5-b974-bc8dc698dfbf.jpg)

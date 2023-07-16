@@ -1,6 +1,7 @@
 ---
 title: Father-Son Camping Trip 2022
 publish_date: 2022-07-17T18:08:03+00:00
+tags: ["travel", "camping"]
 ---
 
 I got back yesterday from our 17th annual Father-Son camping trip. We all had a lot of fun!

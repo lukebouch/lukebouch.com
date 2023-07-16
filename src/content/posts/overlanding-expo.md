@@ -1,6 +1,7 @@
 ---
 title: Overlanding Expo East 2022
 publish_date: 2022-10-10T01:05:12+00:00
+tags: ["travel", "camping"]
 ---
 
 This weekend, I went camping with some friends and my dad and brother. We went to Overland Expo and here are some photos I got from it.
