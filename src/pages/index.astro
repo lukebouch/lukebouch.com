@@ -2,12 +2,13 @@
 import { SEO } from 'astro-seo';
 import Layout from '../components/Layouts/Main.astro';
 import profile from '../images/profile-small.png';
+import Image from 'astro/components/Image.astro';
 ---
 
 <Layout title="Luke Bouch">
   <SEO title="The personal website of Luke Bouch." slot="seo" />
   <section class="p-5 md:px-14">
-    <img class="rounded-full w-16" src={profile} />
+    <Image class="rounded-full w-16" src={profile} alt="Portrait of Luke Bouch" />
     <h1
       class="mt-5 text-4xl font-bold tracking-tight leading-snug text-zinc-900"
     >
