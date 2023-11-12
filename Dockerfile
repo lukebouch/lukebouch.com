@@ -16,20 +16,5 @@ COPY . .
 # Build the Astro site
 RUN yarn build
 
-# Use the official Caddy image as the base image for serving
-FROM caddy:2
-
-# Set the working directory in the Caddy image
-WORKDIR /site
-
-# Copy the built site from the build stage to the Caddy image
-COPY --from=build /app/dist .
-
-# Copy the Caddyfile from the repository to the Caddy image
-COPY Caddyfile .
-
-# Expose the default Caddy port
-EXPOSE 80
-
-# Start Caddy to serve the static site
-CMD ["caddy", "run", "--config", "Caddyfile", "--adapter", "caddyfile"]
+FROM pierrezemb/gostatic
+COPY --from=build /app/dist /srv/http/
