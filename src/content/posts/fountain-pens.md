@@ -1,6 +1,6 @@
 ---
 title: Fountain Pens
-publish_date: 2024-01-18T14:36:06+00:00
+publish_date: 2024-01-18T14:48:20+00:00
 ---
 
 Ball point pens are the standard. You see them everywhere. They are cheap, really don't take any skill to use, and are disposable which is just what most Americans like. But a few months ago when I learned about fountain pens, I decide to give them a try.
