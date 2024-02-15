@@ -1,10 +1,13 @@
 ---
 import Layout from '../components/Layouts/Main.astro';
+import { Image } from 'astro:assets';
+
+import lukeBouchImage from '../images/lukebouch.png';
 ---
 
 <Layout>
     <section class="hero">
-        <div class="container">
+        <div class="container columns-2">
             <div class="text">
                 <h1>Luke Bouch</h1>
                 <p>
@@ -17,6 +20,10 @@ import Layout from '../components/Layouts/Main.astro';
                     UI/UX.
                 </p>
             </div>
+            <Image
+                src={lukeBouchImage}
+                alt="A photo of Luke Bouch."
+            />
         </div>
     </section>
     <section>
