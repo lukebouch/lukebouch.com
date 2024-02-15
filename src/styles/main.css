@@ -13,6 +13,10 @@
     --header-height: 5rem;
 }
 
+* {
+    line-height: 1.5;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -25,7 +29,8 @@ p {
 .container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 5rem;
+    box-sizing: content-box;
 }
 
 .columns-2 {
@@ -67,8 +72,6 @@ header {
 .hero {
     position: relative;
     padding-top: var(--header-height);
-    padding-top: 8rem;
-    padding-bottom: 8rem;
 }
 .hero::after {
     content: '';
@@ -89,13 +92,11 @@ header {
 }
 
 .hero .columns-2 .text {
-    flex: 1 1 60ch;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60ch;
+    flex: 1 1 20rem;
 }
 
 .hero .columns-2 > img {
     width: 20rem;
-    max-width: 50rem;
+    flex: 1 1 30;
+    max-width: 60vw;
 }
