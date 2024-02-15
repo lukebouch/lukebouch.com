@@ -10,11 +10,24 @@
 }
 
 :root {
+    --step--2: clamp(0.7813rem, 0.7191rem + 0.3109vi, 0.96rem);
+    --step--1: clamp(0.9375rem, 0.8462rem + 0.4565vi, 1.2rem);
+    --step-0: clamp(1.125rem, 0.9946rem + 0.6522vi, 1.5rem);
+    --step-1: clamp(1.35rem, 1.1674rem + 0.913vi, 1.875rem);
+    --step-2: clamp(1.62rem, 1.3683rem + 1.2587vi, 2.3438rem);
+    --step-3: clamp(1.944rem, 1.6012rem + 1.7142vi, 2.9297rem);
+    --step-4: clamp(2.3328rem, 1.8704rem + 2.3118vi, 3.6621rem);
+    --step-5: clamp(2.7994rem, 2.1808rem + 3.0927vi, 4.5776rem);
+
     --header-height: 5rem;
 }
 
 * {
     line-height: 1.5;
+}
+
+html {
+    color: var(--body-dark);
 }
 
 img {
@@ -24,6 +37,23 @@ img {
 
 p {
     max-width: 60ch;
+    font-size: var(--step-0);
+}
+
+h1 {
+    font-size: var(--step-5);
+}
+h2 {
+    font-size: var(--step-4);
+}
+h3 {
+    font-size: var(--step-3);
+}
+h4 {
+    font-size: var(--step-2);
+}
+h5 {
+    font-size: var(--step-1);
 }
 
 .container {
