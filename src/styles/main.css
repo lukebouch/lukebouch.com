@@ -30,6 +30,10 @@ html {
     color: var(--body-dark);
 }
 
+body {
+    font-size: var(--step-0);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -86,13 +90,12 @@ header {
 .main-nav ul {
     display: flex;
     list-style-type: none;
-    margin: 1rem auto;
 }
 .main-nav ul > li {
     font-family: 'Vault Alarm', sans-serif;
 }
 .main-nav ul > li + li {
-    margin-left: 2.5rem;
+    margin-left: var(--step-3);
 }
 .main-nav ul a {
     text-decoration: none;
