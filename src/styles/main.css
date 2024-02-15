@@ -1,0 +1,64 @@
+@import './reset.css';
+@import './colors.css';
+@import './typography.css';
+
+@font-face {
+    font-family: 'Vault Alarm';
+    src: url('/fonts/vault-alarm.woff2') format('woff2'),
+        url('/fonts/vault-alarm.woff') format('woff');
+    font-weight: bolder;
+}
+
+:root {
+    --header-height: 5rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    position: absolute;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-nav {
+    width: 100%;
+}
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 1rem auto;
+}
+.main-nav ul > li {
+    font-family: 'Vault Alarm', sans-serif;
+}
+.main-nav ul > li + li {
+    margin-left: 2.5rem;
+}
+.main-nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    position: relative;
+    padding-top: var(--header-height);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.hero::after {
+    content: '';
+    background-image: url('/signal.svg');
+    opacity: 0.02;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
