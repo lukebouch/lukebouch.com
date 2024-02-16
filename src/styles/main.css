@@ -45,21 +45,15 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 50;
 }
 .main-nav {
     width: 100%;
-}
-.main-nav ul {
     display: flex;
-    list-style-type: none;
+    gap: var(--step-3);
 }
-.main-nav ul > li {
+.main-nav a {
     font-family: 'Vault Alarm', sans-serif;
-}
-.main-nav ul > li + li {
-    margin-left: var(--step-3);
-}
-.main-nav ul a {
     text-decoration: none;
     color: #000;
 }
