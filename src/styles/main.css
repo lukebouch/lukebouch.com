@@ -53,7 +53,7 @@ header {
     gap: var(--step-3);
 }
 .main-nav a {
-    font-family: 'Vault Alarm', sans-serif;
+    font-family: var(--display-font);
     text-decoration: none;
     color: #000;
 }
@@ -82,11 +82,57 @@ header {
 }
 
 .hero .columns-2 .text {
-    flex: 1 1 30rem;
+    flex: 1 1 35rem;
 }
 
 .hero .columns-2 > img {
     width: 20rem;
     flex: 1 1 30;
     max-width: 60vw;
+}
+
+.hobbies {
+    position: relative;
+    margin-top: calc(var(--step-3) * -1);
+    z-index: 10;
+}
+
+.hobbies > div {
+    background: var(--primary);
+    color: var(--body-light);
+
+    padding-top: var(--step-2);
+    padding-bottom: var(--step-5);
+    margin-top: calc(var(--step--1) * -1);
+    margin-bottom: calc(var(--step--1) * -1);
+}
+
+.hobbies > img:last-child {
+    transform: rotate();
+    rotate: 180deg;
+}
+
+.hobbies .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hobbies h2 {
+    color: var(--heading-light);
+    margin-bottom: var(--step-0);
+}
+
+.hobbies ul {
+    display: flex;
+    list-style: none;
+    gap: var(--step-2);
+    font-family: var(--display-font);
+}
+
+.hobbies li {
+    display: flex;
+    white-space: nowrap;
+    gap: var(--step--2);
 }

@@ -5,6 +5,10 @@
     font-weight: bolder;
 }
 
+:root {
+    --display-font: 'Vault Alarm', sans-serif;
+}
+
 html {
     color: var(--body-dark);
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +21,7 @@ h4,
 h5,
 h6 {
     font-size: 100%;
-    font-family: 'Vault Alarm', sans-serif;
+    font-family: var(--display-font);
     color: var(--heading-dark);
 }
 
