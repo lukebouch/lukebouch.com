@@ -6,6 +6,7 @@
 }
 
 :root {
+    --measure: 60ch;
     --display-font: 'Vault Alarm', sans-serif;
 }
 
@@ -26,7 +27,7 @@ h6 {
 }
 
 p {
-    max-width: 60ch;
+    max-width: var(--measure);
     font-size: var(--step-0);
 }
 

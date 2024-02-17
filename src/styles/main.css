@@ -212,3 +212,45 @@ header {
 .overcomplicating-things > img:last-child {
     rotate: 180deg;
 }
+
+.past-projects {
+    padding-top: var(--step-6);
+    padding-bottom: var(--step-6);
+}
+.past-projects h2 {
+    text-align: center;
+}
+.past-projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--step-5);
+    list-style: none;
+    margin-top: var(--step-5);
+}
+.past-projects li {
+    max-width: var(--measure);
+    flex: 1 1 30rem;
+}
+.past-projects li .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4/3;
+    padding: var(--step-0);
+    margin-bottom: var(--step-3);
+    border-radius: var(--step-0);
+    box-shadow: #0000001e 0 0 var(--step-0);
+}
+.past-projects li .image img {
+    height: 85%;
+    width: 85%;
+}
+.past-projects li .name {
+    margin-bottom: var(--step--2);
+    font-size: var(--step-1);
+    font-family: var(--display-font);
+    color: var(--heading-dark);
+}
+.past-projects li .description {
+}
