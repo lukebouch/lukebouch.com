@@ -82,14 +82,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin-top: var(--step-3);
 }
 
 .hero .columns-2 .text {
-    flex: 1 1 35rem;
+    flex: 1 1 45rem;
 }
 
 .hero .columns-2 > img {
-    width: 20rem;
+    width: 35rem;
     flex: 1 1 30;
     max-width: 60vw;
 }
@@ -109,7 +110,6 @@ header {
     margin-top: calc(var(--step--1) * -1);
     margin-bottom: calc(var(--step--1) * -1);
 }
-
 .hobbies > img:last-child {
     rotate: 180deg;
 }
