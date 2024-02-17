@@ -96,6 +96,7 @@ header {
 }
 
 .hobbies {
+    overflow-x: hidden;
     position: relative;
     margin-top: calc(var(--step-3) * -1);
     z-index: 10;
@@ -109,6 +110,9 @@ header {
     padding-bottom: var(--step-5);
     margin-top: calc(var(--step--1) * -1);
     margin-bottom: calc(var(--step--1) * -1);
+}
+.hobbies > img {
+    transform: scale(1.1, 1);
 }
 .hobbies > img:last-child {
     rotate: 180deg;
