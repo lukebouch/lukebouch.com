@@ -61,6 +61,22 @@ header {
     border-bottom: 4px solid currentColor;
 }
 
+.main-footer {
+    background-color: var(--primary);
+    padding: var(--step-3);
+}
+.main-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--step-2);
+}
+.main-footer a {
+    font-size: var(--step--1);
+    color: var(--body-light);
+    text-decoration: none;
+}
+
 .hero {
     position: relative;
     padding-top: var(--header-height);
@@ -221,6 +237,7 @@ header {
 .past-projects {
     padding-top: var(--step-6);
     padding-bottom: var(--step-6);
+    margin-bottom: var(--step-4);
 }
 .past-projects h2 {
     text-align: center;
@@ -235,7 +252,7 @@ header {
 }
 .past-projects li {
     max-width: var(--measure);
-    flex: 1 1 30rem;
+    flex: 0 1 30rem;
 }
 .past-projects li .image {
     display: flex;
