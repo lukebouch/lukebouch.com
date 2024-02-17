@@ -180,6 +180,7 @@ header {
 }
 
 .overcomplicating-things {
+    overflow-x: hidden;
     margin-top: calc(var(--step-4) * -1);
 }
 .overcomplicating-things > div {
