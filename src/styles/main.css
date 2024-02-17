@@ -191,15 +191,23 @@ header {
     margin-right: auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    gap: var(--step-6);
+    gap: var(--step-4);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
 
     list-style: none;
+}
+.experience li > * {
+    margin-left: auto;
+    margin-right: auto;
 }
 .experience .company {
     font-size: var(--step-1);
     font-family: var(--display-font);
+}
+.experience .date {
+    color: var(--body-dark-subtle);
 }
 
 .overcomplicating-things {
