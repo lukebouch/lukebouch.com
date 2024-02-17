@@ -1,0 +1,27 @@
+---
+const currentUrl = Astro.url.pathname;
+
+const items = [
+    { href: '/', label: 'Home' },
+    { href: '/portfolio', label: 'Portfolio' },
+    { href: '/posts', label: 'Posts' },
+];
+---
+
+<nav class="container main-nav" role="list">
+    {
+        items.map((item) => {
+            return (
+                <a
+                    href={item.href}
+                    role="listitem"
+                    class:list={[
+                        { active: item.href === currentUrl },
+                    ]}
+                >
+                    {item.label}
+                </a>
+            );
+        })
+    }
+</nav>

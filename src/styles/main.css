@@ -57,6 +57,9 @@ header {
     text-decoration: none;
     color: #000;
 }
+.main-nav a.active {
+    border-bottom: 4px solid currentColor;
+}
 
 .hero {
     position: relative;
