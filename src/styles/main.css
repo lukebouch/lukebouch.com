@@ -1,9 +1,10 @@
 @import './reset.css';
 @import './colors.css';
 @import './typography.css';
+@import './utilities.css';
 
 /* @link https://utopia.fyi/type/calculator?c=240,16,1.2,1920,24,1.333,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-:root {
+:root  {
     --step--2: clamp(0.6944rem, 0.6731rem + 0.1426vi, 0.8442rem);
     --step--1: clamp(0.8333rem, 0.7916rem + 0.278vi, 1.1253rem);
     --step-0: clamp(1rem, 0.9286rem + 0.4762vi, 1.5rem);
@@ -35,6 +36,10 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+}
+
+ol {
+    list-style: none;
 }
 
 .container {
