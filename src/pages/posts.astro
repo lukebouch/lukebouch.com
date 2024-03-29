@@ -14,30 +14,25 @@ const posts = await getPosts();
                 {
                     posts.map((post) => (
                         <li>
-                            <article class="h-entry">
-                                {typeof post.data.title ==
-                                'string' ? (
-                                    <a
-                                        class="u-url"
-                                        href={'/posts/' + post.slug}
-                                    >
+                            <a
+                                class="u-url"
+                                href={'/posts/' + post.slug}
+                            >
+                                <article class="h-entry">
+                                    {typeof post.data.title ==
+                                    'string' ? (
                                         <h2 class="p-name">
                                             {post.data.title}
                                         </h2>
-                                    </a>
-                                ) : (
-                                    <div
-                                        class="e-content post-content p-name"
-                                        set:html={marked.parse(
-                                            post.body
-                                        )}
-                                    />
-                                )}
-                                <div class="flex gap-3">
-                                    <a
-                                        class="u-url"
-                                        href={'/posts/' + post.slug}
-                                    >
+                                    ) : (
+                                        <div
+                                            class="e-content post-content p-name"
+                                            set:html={marked.parse(
+                                                post.body
+                                            )}
+                                        />
+                                    )}
+                                    <div class="flex gap-3">
                                         <FormattedDate
                                             date={
                                                 post.data.publish_date
@@ -54,25 +49,25 @@ const posts = await getPosts();
                                                 )
                                             </span>
                                         )}
+                                        {typeof post.data.title !==
+                                            'string' && (
+                                            <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                                                Micropost
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div class="hidden dt-published">
+                                        TODO
+                                    </div>
+                                    <a
+                                        rel="author"
+                                        class="hidden p-author h-card"
+                                        href="https://lukebouch.com"
+                                    >
+                                        Luke Bouch
                                     </a>
-                                    {typeof post.data.title !==
-                                        'string' && (
-                                        <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
-                                            Micropost
-                                        </span>
-                                    )}
-                                </div>
-                                <div class="hidden dt-published">
-                                    TODO
-                                </div>
-                                <a
-                                    rel="author"
-                                    class="hidden p-author h-card"
-                                    href="https://lukebouch.com"
-                                >
-                                    Luke Bouch
-                                </a>
-                            </article>
+                                </article>
+                            </a>
                         </li>
                     ))
                 }
