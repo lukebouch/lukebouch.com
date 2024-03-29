@@ -1,3 +1,21 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 var(--step-4);
+    box-sizing: content-box;
+}
+
+.region {
+    margin-block-start: var(--step-3);
+    margin-block-end: var(--step-3);
+}
+
+.center {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: 80ch;
+}
+
 .stack > * + * {
     margin-block-start: var(--step-2);
 }

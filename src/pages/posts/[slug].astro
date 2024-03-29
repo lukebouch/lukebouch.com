@@ -1,0 +1,45 @@
+---
+import { getPosts } from '../../utilities/posts.js';
+import Layout from '../../components/Layouts/Main.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import marked from '../../utilities/marked.js';
+
+export const getStaticPaths = async function () {
+    let posts = await getPosts();
+
+    return posts.map((post) => {
+        return {
+            params: { slug: post.slug },
+            props: { post: post },
+        };
+    });
+};
+
+const { post } = Astro.props;
+---
+
+<Layout>
+    <section class="container region stack">
+        <div>
+            <h1>{post.data.title}</h1>
+            <p>
+                Published on <FormattedDate
+                    date={post.data.publish_date}
+                />
+            </p>
+            <div class="hidden dt-published">
+                {post.data.publish_date}
+            </div>
+            <a
+                rel="author"
+                class="hidden p-author h-card"
+                href="https://lukebouch.com">Luke Bouch</a
+            >
+        </div>
+
+        <div
+            class="prose e-content post-content"
+            set:html={marked.parse(post.body)}
+        />
+    </section>
+</Layout>
