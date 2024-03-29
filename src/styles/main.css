@@ -1,22 +1,11 @@
 @import './reset.css';
+@import './scale.css';
 @import './colors.css';
 @import './typography.css';
 @import './utilities.css';
+@import './components.css';
 
-/* @link https://utopia.fyi/type/calculator?c=240,16,1.2,1920,24,1.333,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-:root {
-    --step--2: clamp(0.6944rem, 0.6731rem + 0.1426vi, 0.8442rem);
-    --step--1: clamp(0.8333rem, 0.7916rem + 0.278vi, 1.1253rem);
-    --step-0: clamp(1rem, 0.9286rem + 0.4762vi, 1.5rem);
-    --step-1: clamp(1.2rem, 1.0858rem + 0.7614vi, 1.9995rem);
-    --step-2: clamp(1.44rem, 1.265rem + 1.167vi, 2.6653rem);
-    --step-3: clamp(1.728rem, 1.4673rem + 1.738vi, 3.5529rem);
-    --step-4: clamp(2.0736rem, 1.6933rem + 2.5356vi, 4.736rem);
-    --step-5: clamp(2.4883rem, 1.9419rem + 3.6426vi, 6.3131rem);
-    --step-6: clamp(2.986rem, 2.2104rem + 5.1708vi, 8.4153rem);
-
-    --header-height: 5rem;
-}
+@import './posts.css';
 
 body {
     min-height: 100vh;
@@ -47,6 +36,11 @@ ol {
     margin: 0 auto;
     padding: 0 var(--step-3);
     box-sizing: content-box;
+}
+
+.region {
+    margin-block-start: var(--step-3);
+    margin-block-end: var(--step-3);
 }
 
 .columns-2 {
@@ -95,209 +89,14 @@ header {
     text-decoration: none;
 }
 
+img.circle {
+    border-radius: 100%;
+}
+
 .hero {
-    position: relative;
-    margin-top: calc(var(--header-height) * -1);
-    padding-top: var(--header-height);
-}
-.hero::after {
-    content: '';
-    background-image: url('/signal.svg');
-    background-size: 30rem;
-    opacity: 0.01;
-    position: absolute;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    padding-top: var(--step-5);
 }
 
-.hero .columns-2 {
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin-top: var(--step-3);
-}
-
-.hero .columns-2 .text {
-    flex: 1 1 45rem;
-}
-
-.hero .columns-2 > img {
-    width: 35rem;
-    flex: 1 1 30;
-    max-width: 60vw;
-}
-
-.hobbies {
-    overflow-x: hidden;
-    position: relative;
-    margin-top: calc(var(--step-3) * -1);
-    z-index: 10;
-}
-
-.hobbies > div {
-    background: var(--primary);
-    color: var(--body-light);
-
-    padding-top: var(--step-1);
-    padding-bottom: var(--step-5);
-    margin-top: calc(var(--step--1) * -1);
-    margin-bottom: calc(var(--step--1) * -1);
-}
-.hobbies > img {
-    transform: scale(1.1, 1);
-}
-.hobbies > img:last-child {
-    rotate: 180deg;
-}
-
-.hobbies .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.hobbies h2 {
-    color: var(--heading-light);
-    margin-bottom: var(--step-0);
-}
-
-.hobbies ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: var(--step-0) var(--step-3);
-    font-family: var(--display-font);
-}
-
-.hobbies li {
-    display: flex;
-    align-items: center;
-    gap: var(--step--1);
-    white-space: nowrap;
-}
-
-.hobbies li > img {
-    height: auto;
-    width: var(--step-2);
-}
-
-.experience {
-    position: relative;
-    margin-top: calc(var(--step-4) * -1);
-    padding-top: calc(var(--step-6) + var(--step-4));
-    padding-bottom: calc(var(--step-6) + var(--step-5));
-}
-.experience:after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -10;
-    background-image: url('/assets/paper-background.jpg');
-    opacity: 0.5;
-}
-.experience h2 {
-    text-align: center;
-    margin-bottom: var(--step-5);
-}
-.experience ul {
-    max-width: 70rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    gap: var(--step-4);
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-
-    list-style: none;
-}
-.experience li > * {
-    margin-left: auto;
-    margin-right: auto;
-}
-.experience .company {
-    font-size: var(--step-1);
-    font-family: var(--display-font);
-}
-.experience .date {
-    color: var(--body-dark-subtle);
-}
-
-.overcomplicating-things {
-    overflow-x: hidden;
-    margin-top: calc(var(--step-4) * -1);
-}
-.overcomplicating-things > div {
-    color: var(--heading-light);
-    background-color: var(--primary);
-    text-align: center;
-
-    padding-top: var(--step-1);
-    padding-bottom: var(--step-5);
-    margin-top: calc(var(--step--1) * -1);
-    margin-bottom: calc(var(--step--1) * -1);
-}
-.overcomplicating-things h2 {
-    color: var(--heading-light);
-    font-size: var(--step-3);
-}
-.overcomplicating-things p {
-    font-size: var(--step-2);
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: var(--step--2);
-}
-.overcomplicating-things > img {
-    transform: scale(-1.5, 1);
-}
-.overcomplicating-things > img:last-child {
-    rotate: 180deg;
-}
-
-.past-projects {
-    padding-top: var(--step-6);
-    padding-bottom: var(--step-6);
-    margin-bottom: var(--step-4);
-}
-.past-projects h2 {
-    text-align: center;
-}
-.past-projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--step-5);
-    list-style: none;
-    margin-top: var(--step-5);
-}
-.past-projects li {
-    max-width: var(--measure);
-    flex: 0 1 30rem;
-}
-.past-projects li .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 4/3;
-    padding: var(--step-0);
-    margin-bottom: var(--step-3);
-    border-radius: var(--step-0);
-    box-shadow: #0000001e 0 0 var(--step-0);
-}
-.past-projects li .image img {
-    height: 85%;
-    width: 85%;
-}
-.past-projects li .name {
-    margin-bottom: var(--step--2);
-    font-size: var(--step-1);
-    font-family: var(--display-font);
-    color: var(--heading-dark);
+.hero .portrait {
+    max-width: var(--step-6);
 }

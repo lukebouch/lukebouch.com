@@ -9,8 +9,8 @@ const posts = await getPosts();
 
 <Layout>
     <section>
-        <div class="container">
-            <ol>
+        <div class="container region posts">
+            <ol class="stack">
                 {
                     posts.map((post) => (
                         <li>

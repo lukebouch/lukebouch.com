@@ -2,7 +2,24 @@
 import Layout from '../components/Layouts/Main.astro';
 import { Image } from 'astro:assets';
 
-import lukeBouchImage from '../images/lukebouch.png';
+import lukeBouchImage from '../images/lukebouch.jpg';
 ---
 
-<Layout />
+<Layout>
+    <section class="container hero">
+        <Image
+            class="portrait circle"
+            src={lukeBouchImage}
+            alt="Photo of Luke Bouch"
+        />
+        <h1>Luke Bouch</h1>
+        <p>
+            Homeschooled by my mom and equipped by my dad with a vast
+            knowledge of engines and electricity, I have been able to
+            explore and enjoy numerous hobbies that keep me busy in
+            between work and serving at church. I enjoy using well-
+            designed software and have a passion for creating great
+            UI/UX.
+        </p>
+    </section>
+</Layout>
