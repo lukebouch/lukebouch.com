@@ -19,3 +19,11 @@
 .stack > * + * {
     margin-block-start: var(--step-2);
 }
+
+.stack-0 > * + * {
+    margin-block-start: var(--step-0);
+}
+
+.stack-1 > * + * {
+    margin-block-start: var(--step-1);
+}
