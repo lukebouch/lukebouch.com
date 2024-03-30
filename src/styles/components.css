@@ -6,8 +6,8 @@
 }
 
 .region {
-    margin-block-start: var(--step-3);
-    margin-block-end: var(--step-3);
+    margin-block-start: var(--step-1);
+    margin-block-end: var(--step-1);
 }
 
 .center {

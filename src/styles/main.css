@@ -50,6 +50,8 @@ header {
     width: 100%;
     display: flex;
     gap: var(--step-3);
+    padding-block-start: var(--step-1);
+    padding-block-end: var(--step-1);
 }
 .main-nav a {
     font-family: var(--display-font);
@@ -80,7 +82,7 @@ img.circle {
 }
 
 .hero {
-    padding-top: var(--step-5);
+    padding-top: var(--step-4);
 }
 
 .hero .portrait {
