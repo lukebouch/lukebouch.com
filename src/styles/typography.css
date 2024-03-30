@@ -64,6 +64,10 @@ a {
     margin-block-start: var(--step-0);
 }
 
+.prose > p > img {
+    border-radius: var(--step--3);
+}
+
 .prose h1,
 .prose h2,
 .prose h3,
