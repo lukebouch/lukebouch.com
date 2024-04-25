@@ -1,7 +1,7 @@
 ---
 title: Boy's Camping Trip 2023
 publish_date: 2023-07-16T21:30:44+00:00
-tags: ["travel", "camping"]
+tags: ['travel', 'camping']
 ---
 
 Ever since I was three, my dad has planned an annual camping trip up in the mountains for fathers to take their sons. It changes a little bit every year and the group is always a little different. But my dad, Uncle, cousin and I have been going for 18 years and I've been yet to miss one.
@@ -26,6 +26,7 @@ I look forward to the rest of the group joining us tomorrow.
 ## Day 1
 
 Today was a pretty uneventful day. since we got to bed so late last night, Carter and I slept in until about 10am this morning. We cooked eggs for breakfast and then hopped in the car.
+
 ![](https://static.lukebouch.com/posts/boys-camping-trip-2023/luke-cooking-eggs.jpg)
 
 On the way in yesterday, we had seen a sign saying that one of the roads we drove on was going to be closed starting today and drove to see if we were going to need to find an alternative route for the rest of the group. Luckily, it was closed farther down the road and it was not going to affect us.
