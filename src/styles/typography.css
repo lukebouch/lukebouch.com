@@ -64,6 +64,15 @@ a {
     margin-block-start: var(--step-0);
 }
 
+.prose a {
+    padding-bottom: 3px;
+    border-bottom: 4px solid var(--link);
+}
+
+.prose a:hover {
+    border-bottom: 4px solid var(--link-hover);
+}
+
 .prose li + li {
     margin-block-start: var(--step--1);
 }

@@ -10,4 +10,7 @@
     --primary: #005169;
     --primary-light: #005169;
     --primary-ligher: #005169;
+
+    --link: var(--body-light-2);
+    --link-hover: var(--body-dark);
 }
