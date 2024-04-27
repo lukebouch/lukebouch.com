@@ -61,7 +61,9 @@ Here is what I currently use. I'm always finding new hardware and software so th
 ## Services
 
 -   NextDNS
+-   Feedbin
 
 ## Vehicles
 
 -   2005 Honda Pilot
+-   Sazuki DR650
