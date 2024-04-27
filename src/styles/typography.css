@@ -65,12 +65,12 @@ a {
 }
 
 .prose a {
-    padding-bottom: 3px;
-    border-bottom: 4px solid var(--link);
+    padding-bottom: 6px;
+    border-bottom: 3px solid var(--link);
 }
 
 .prose a:hover {
-    border-bottom: 4px solid var(--link-hover);
+    border-bottom: 3px solid var(--link-hover);
 }
 
 .prose {

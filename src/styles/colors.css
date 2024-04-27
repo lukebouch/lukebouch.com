@@ -1,14 +1,17 @@
 :root {
-    --blue-900: #002f3d;
-    --blue-800: #003d51;
-    --blue-700: #005169;
-    --blue-600: #00607e;
-    --blue-500: #006e8f;
-    --blue-400: #0780a4;
-    --blue-300: #1094b9;
-    --blue-200: #1ba7cf;
-    --blue-100: #33c0e8;
+    --blue-950: #083344;
+    --blue-900: #164e63;
+    --blue-800: #155e75;
+    --blue-700: #0e7490;
+    --blue-600: #0891b2;
+    --blue-500: #06b6d4;
+    --blue-400: #22d3ee;
+    --blue-300: #67e8f9;
+    --blue-200: #a5f3fc;
+    --blue-100: #cffafe;
+    --blue-50: #ecfeff;
 
+    --primary-950: var(--blue-950);
     --primary-900: var(--blue-900);
     --primary-800: var(--blue-800);
     --primary-700: var(--blue-700);
@@ -18,6 +21,7 @@
     --primary-300: var(--blue-300);
     --primary-200: var(--blue-200);
     --primary-100: var(--blue-100);
+    --primary-50: var(--blue-50);
 
     --heading: #1f1f1f;
     --body: #414141;
@@ -26,7 +30,7 @@
     --body-light-2: #e8e8e8;
 
     --link: var(--primary-100);
-    --link-hover: var(--primary-400);
+    --link-hover: var(--primary-300);
 }
 
 .dark {
