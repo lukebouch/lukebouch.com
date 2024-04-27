@@ -73,6 +73,10 @@ a {
     border-bottom: 4px solid var(--link-hover);
 }
 
+.prose {
+    list-style-position: inside;
+}
+
 .prose li + li {
     margin-block-start: var(--step--1);
 }
