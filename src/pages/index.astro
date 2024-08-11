@@ -3,25 +3,37 @@ import Layout from '../components/Layouts/Main.astro';
 import { Image } from 'astro:assets';
 
 import lukeBouchImage from '../images/lukebouch.jpg';
+import playingWithSnapCircuitsPhoto from '../images/playing-with-snap-circuits.jpg';
+import lukeBouchAndJakeBennettPhoto from '../images/lukebouch-and-jakebennett.jpg';
 ---
 
 <Layout>
-    <section class="container hero stack-1">
-        <Image
-            class="portrait circle"
-            src={lukeBouchImage}
-            alt="Photo of Luke Bouch"
-        />
-        <div>
-            <h1>Luke Bouch</h1>
-            <p>
-                Homeschooled by my mom and equipped by my dad with a
-                vast knowledge of engines and electricity, I have been
-                able to explore and enjoy numerous hobbies that keep
-                me busy in between work and serving at church. I enjoy
-                using well- designed software and have a passion for
-                creating great UI/UX.
-            </p>
-        </div>
-    </section>
+    <div class="stack-3">
+        <section class="container hero stack-1">
+            <Image
+                class="portrait circle"
+                src={lukeBouchImage}
+                alt="Photo of Luke Bouch"
+            />
+            <div>
+                <h1>Luke Bouch</h1>
+                <p>
+                    Homeschooled by my mom and equipped by my dad with
+                    a vast knowledge of engines and electricity, I
+                    have been able to explore and enjoy numerous
+                    hobbies that keep me busy in between work and
+                    serving at church. I enjoy using well- designed
+                    software and have a passion for creating great
+                    UI/UX.
+                </p>
+            </div>
+        </section>
+        <section class="container stack-1">
+            <h2>Photos</h2>
+            <div>
+                <Image src={playingWithSnapCircuitsPhoto} alt="" />
+                <Image src={lukeBouchAndJakeBennettPhoto} alt="" />
+            </div>
+        </section>
+    </div>
 </Layout>

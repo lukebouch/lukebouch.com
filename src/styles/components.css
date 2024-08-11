@@ -19,19 +19,25 @@
 .stack > * + * {
     margin-block-start: var(--step-2);
 }
-
 .stack-0 > * + * {
     margin-block-start: var(--step-0);
 }
-
 .stack-1 > * + * {
     margin-block-start: var(--step-1);
 }
-
 .stack-2 > * + * {
     margin-block-start: var(--step-2);
 }
-
 .stack-3 > * + * {
     margin-block-start: var(--step-3);
+}
+.stack-4 > * + * {
+    margin-block-start: var(--step-4);
+}
+.stack-5 > * + * {
+    margin-block-start: var(--step-5);
+}
+
+.grid {
+    display: grid;
 }
