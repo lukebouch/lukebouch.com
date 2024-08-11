@@ -8,71 +8,62 @@ Here is what I currently use. I'm always finding new hardware and software so th
 
 ## Hardware
 
-- 2020 13" MacBook Pro, M1 with 512GB of storage and 16GB of RAM
-- 2023 16" MacBook Pro, M1 Pro with 1TB of storage and 16GB of RAM (provided by work)
-- Apple Studio Display with the height adjustable stand and nano-texture glass
-- Kineses Advantage 360 keyboard
-- Logitech MX Vertical mouse
-- Caldigit TS3+
-- 11" iPad Pro (1st Generation) with 256GB of storage
-- AirPods Pro (1st Generation)
-- AirPods Max
-- iPhone 13 mini
+-   2020 13" MacBook Pro, M1 with 512GB of storage and 16GB of RAM
+-   2023 Mac mini m2 Pro with 512GB of storage and 16GB of RAM
+-   Apple Studio Display with the height adjustable stand and nano-texture glass
+-   Kineses Advantage 360 keyboard
+-   Logitech MX Vertical mouse
+-   Caldigit TS3+
+-   11" iPad Pro (1st Generation) with 256GB of storage
+-   AirPods Pro (1st Generation)
+-   AirPods Max
+-   Pixel 7a running GrapheneOS
 
 ### Audio
 
-- Focusrite Scarlet 2i2 (3rd Generation)
-- Audio Technical AT2020 micrphone
-- Bose Companion II speakers
+-   Focusrite Scarlet 2i2 (3rd Generation)
+-   Audio Technical AT2020 micrphone
+-   Bose Companion II speakers
 
 ### Photography and Videography
 
-- Sony a6300
-- DJI Ronin RS 3
+-   Sony a6300
+-   DJI Ronin RS 3
 
 ### Organization
 
-- [Peak Design Everyday Backpack 30L](https://www.peakdesign.com/products/everyday-backpack?variant=29743300771884)
-- [Tripped Travel Pouch](https://www.trippedtravelgear.com/products/travel-pouch-black)
-- [Uppercase Organizers](https://gouppercase.com/collections/organizer-pouches)
+-   [Peak Design Everyday Backpack 30L](https://www.peakdesign.com/products/everyday-backpack?variant=29743300771884)
+-   [Uppercase Organizers](https://gouppercase.com/collections/organizer-pouches)
 
 ## Software
 
-- PHPStorm
-- Tower
-- [Nova](https://nova.app/)
-- Ray
-- Raycast
-- iTerm 2
-- Tinkerwell
-- Safari
-- Helo
-- TablePlus
-- Oh My Zsh
-- Working Copy (iOS)
-- Lightroom (cloud version)
-- Affinity Photo 2
-- Affinity Designer 2
-- Affinity Publisher 2
-- Final Cut Pro
-- Compressor (Apple)
-- Things 3
-- Overcast
-- Apple Maps
-- Telegram
-- Obsidian
-- Gaia GPS
-- You Need A Budget
-- When did I...?
-- Spark
-- Slack
-- Concepts
+-   VSCode
+-   Tower
+-   Ray
+-   Raycast
+-   iTerm 2
+-   Tinkerwell
+-   Safari
+-   Helo
+-   TablePlus
+-   Oh My Zsh
+-   Affinity Photo 2
+-   Affinity Designer 2
+-   Affinity Publisher 2
+-   Final Cut Pro
+-   Compressor (Apple)
+-   Telegram
+-   Obsidian
+-   Actual Budget
+-   Spark
+-   Concepts
 
 ## Services
 
-- NextDNS
-- Vecteezy
+-   NextDNS
+-   Feedbin
 
 ## Vehicles
 
-- 2005 Honda Pilot
+-   2005 Honda Pilot
+-   Sazuki DR650

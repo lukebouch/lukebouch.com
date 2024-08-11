@@ -1,0 +1,90 @@
+@import './reset.css';
+@import './scale.css';
+@import './colors.css';
+@import './typography.css';
+@import './utilities.css';
+@import './components.css';
+
+@import './posts.css';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: clamp(1080px, 90vw, 1920px);
+    border-left: var(--body-light-2) 2px solid;
+    border-right: var(--body-light-2) 2px solid;
+    box-shadow: 0px 0px 10px var(--body-light-2);
+}
+header {
+    flex: 0 0 auto;
+}
+main {
+    flex: 1 1 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ol {
+    list-style: none;
+}
+
+header {
+    height: var(--header-height);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 50;
+}
+.main-nav {
+    width: 100%;
+    display: flex;
+    gap: var(--step-3);
+    padding-block-start: var(--step-1);
+    padding-block-end: var(--step-1);
+}
+.main-nav a {
+    font-family: var(--display-font);
+    text-decoration: none;
+    color: #000;
+}
+.main-nav a.active {
+    border-bottom: 4px solid currentColor;
+}
+
+.main-footer {
+    padding-top: var(--step-2);
+    padding-bottom: var(--step-2);
+}
+.main-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--step-2);
+}
+.main-footer a {
+    font-size: var(--step--1);
+    text-decoration: none;
+}
+
+img.circle {
+    border-radius: 100%;
+}
+
+.hero {
+    padding-top: var(--step-4);
+}
+
+.hero .portrait {
+    max-width: var(--step-6);
+}

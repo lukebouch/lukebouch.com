@@ -1,82 +1,91 @@
 ---
-import Navigation from '../../components/Navigation.astro';
-import Footer from '../Footer/index.astro';
-import '../../main.css';
+import '../../styles/main.css';
+import Navigation from '../Navigation.astro';
 ---
 
 <!doctype html>
 <html class="h-full" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <slot name="seo" />
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <slot name="seo" />
 
-    <link
-      href="/feed.xml"
-      rel="alternate"
-      type="application/rss+xml"
-      title="Luke Bouch"
-    />
+        <link
+            href="/feed.xml"
+            rel="alternate"
+            type="application/rss+xml"
+            title="Luke Bouch"
+        />
 
-    <meta name="generator" content={Astro.generator} />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      title="Sitemap"
-      href="/sitemap-index.xml"
-    />
+        <meta name="generator" content={Astro.generator} />
+        <link
+            rel="sitemap"
+            type="application/xml"
+            title="Sitemap"
+            href="/sitemap-index.xml"
+        />
 
-    <link rel="me" href="https://github.com/lukebouch" />
-    <link
-      rel="authorization_endpoint"
-      href="https://indieauth.com/auth"
-    />
-    <link
-      rel="token_endpoint"
-      href="https://tokens.indieauth.com/token"
-    />
+        <link rel="me" href="https://github.com/lukebouch" />
+        <link
+            rel="authorization_endpoint"
+            href="https://indieauth.com/auth"
+        />
+        <link
+            rel="token_endpoint"
+            href="https://tokens.indieauth.com/token"
+        />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="theme-color" content="#ffffff" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#2d89ef" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Scripts -->
-    <script
-      src="https://tinylytics.app/embed/F_mEUd2nmZfw5dNSrt1n.js"
-      defer></script>
-  </head>
+        <!-- Scripts -->
+        <script
+            src="https://tinylytics.app/embed/F_mEUd2nmZfw5dNSrt1n.js"
+            defer></script>
+    </head>
 
-  <body class="h-full font-sans antialiased text-gray-900 bg-zinc-50">
-    <div
-      class="h-auto min-h-full max-w-5xl mx-auto bg-white border-l border-r"
-    >
-      <Navigation />
-      <main class="py-5">
-        <slot />
-      </main>
-      <Footer />
-    </div>
-    <script src="../../app.js"></script>
-  </body>
+    <body>
+        <header>
+            <Navigation />
+        </header>
+
+        <main>
+            <slot />
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <nav role="list">
+                    <a href="/feed.xml" role="listitem">RSS Feed</a>
+                    <a
+                        href="https://github.com/lukebouch/lukebouch.com"
+                        role="listitem">Source Code</a
+                    >
+                    <a href="/recommendations">Recommendations</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
 </html>
