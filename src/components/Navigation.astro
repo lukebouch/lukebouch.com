@@ -4,31 +4,27 @@ import MobileLink from './Navigation/MobileLink.astro';
 ---
 
 <header>
-    <nav
-        class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
-        aria-label="Top"
+  <nav
+    class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
+    aria-label="Top"
+  >
+    <div
+      class="items-center justify-center hidden w-full py-6 lg:flex"
     >
-        <div
-            class="items-center justify-center hidden w-full py-6 lg:flex"
-        >
-            <div class="flex items-center">
-                <div class="space-x-8">
-                    <DesktopLink href="/">Home</DesktopLink>
-                    <DesktopLink href="https://blog.lukebouch.com"
-                        >Blog</DesktopLink
-                    >
-                    <DesktopLink href="/uses">Uses</DesktopLink>
-                </div>
-            </div>
+      <div class="flex items-center">
+        <div class="space-x-8">
+          <DesktopLink href="/">Home</DesktopLink>
+          <DesktopLink href="/posts">Blog</DesktopLink>
+          <DesktopLink href="/uses">Uses</DesktopLink>
         </div>
-        <div
-            class="flex flex-wrap justify-center py-4 space-x-6 lg:hidden"
-        >
-            <MobileLink href="/">Home</MobileLink>
-            <MobileLink href="https://blog.lukebouch.com"
-                >Blog</MobileLink
-            >
-            <MobileLink href="/uses">Uses</MobileLink>
-        </div>
-    </nav>
+      </div>
+    </div>
+    <div
+      class="flex flex-wrap justify-center py-4 space-x-6 lg:hidden"
+    >
+      <MobileLink href="/">Home</MobileLink>
+      <MobileLink href="/posts">Blog</MobileLink>
+      <MobileLink href="/uses">Uses</MobileLink>
+    </div>
+  </nav>
 </header>
