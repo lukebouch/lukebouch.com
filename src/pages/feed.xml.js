@@ -14,7 +14,11 @@ export async function GET(context) {
             title: post.data.title ?? post.slug + " - micropost",
             pubDate: post.data.publish_date,
             content: sanitizeHtml(marked.parse(post.body), {
-                allowedTags: ["img"],
+                allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+                allowedAttributes: {
+                    ...sanitizeHtml.defaults.allowedAttributes,
+                    img: ["src", "srcset", "alt", "title", "width", "height", "loading"],
+                },
             }),
             link: `/posts/${post.slug}/`,
         })),
