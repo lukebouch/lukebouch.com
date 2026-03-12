@@ -1,0 +1,4 @@
+/feed.xml  https://blog.lukebouch.com/feed.xml  301
+/feed.json https://blog.lukebouch.com/feed.json 301
+/posts     https://blog.lukebouch.com            301
+/posts/*   https://blog.lukebouch.com/:splat     301
