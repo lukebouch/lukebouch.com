@@ -1,23 +1,23 @@
 [[redirects]]
   from = "/feed.xml"
-  to = "https://blog.lukebouch.com/feed.xml"
+  to = "https://lukebouch.blog/feed.xml"
   status = 301
   force = true
 
 [[redirects]]
   from = "/feed.json"
-  to = "https://blog.lukebouch.com/feed.json"
+  to = "https://lukebouch.blog/feed.json"
   status = 301
   force = true
 
 [[redirects]]
   from = "/posts"
-  to = "https://blog.lukebouch.com"
+  to = "https://lukebouch.blog"
   status = 301
   force = true
 
 [[redirects]]
   from = "/posts/*"
-  to = "https://blog.lukebouch.com/:splat"
+  to = "https://lukebouch.blog/:splat"
   status = 301
   force = true
